@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <ul class="header-ul">
+          <div>
+            <h1 class="amblem">Pro<span>Gear</span></h1>
+          </div>
+          <li><a href="../main.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li class="shop">
+            <a href="../shop.html"
+              >Shop <i class="fa-solid fa-caret-down"></i
+            ></a>
+            <ul class="shop-dropdown">
+              <li>
+                <a class="dropdown-header" href="../cardio.html"
+                  >Cardio Machines</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=01">Treadmill X100</a></li>
+                  <li>
+                    <a href="../product.html?id=07">Elliptical Trainer E200</a>
+                  </li>
+                  <li>
+                    <a href="../product.html?id=08">Rowing Machine R500</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../weights.html"
+                  >Free Weights</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=03">Free Weight</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../strength.html"
+                  >Strength Stations</a
+                >
+                <ul>
+                  <li>
+                    <a href="../product.html?id=02"
+                      >FID7 Pro Adjustable Bench</a
+                    >
+                  </li>
+                  <li><a href="../product.html?id=09">Power Rack PR100</a></li>
+                  <li>
+                    <a href="../product.html?id=10">Cable Crossover CC300</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../functional.html"
+                  >Cable & Functional Trainers</a
+                >
+                <ul>
+                  <li>
+                    <a href="../product.html?id=04">Resistance Band Set</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../intensity.html"
+                  >High-Intensity & Plyo Gear</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=11">Plyo Box Set</a></li>
+                  <li>
+                    <a href="../product.html?id=12">Battle Ropes 50 ft</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../resistance.html"
+                  >Resistance & Mobility</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=06"> Exercise Ball</a></li>
+                  <li><a href="../product.html?id=13">Foam Roller Pro</a></li>
+                  <li><a href="../product.html?id=14">Yoga Block Pair</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../floors.html"
+                  >Floors & Mats</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=05">Yoga Mat</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../accesories.html"
+                  >Accessories & Wearables</a
+                >
+                <ul>
+                  <li>
+                    <a href="../product.html?id=15">Fitness Tracker Watch</a>
+                  </li>
+                  <li><a href="../product.html?id=16">Lifting Gloves</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../bundles.html"
+                  >Bundles & Packages</a
+                >
+                <ul>
+                  <li>
+                    <a href="../product.html?id=17">Home Gym Starter Bundle</a>
+                  </li>
+                  <li><a href="../product.html?id=18">Cardio Duo Pack</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <span class="cart"
+            ><a href="../cart.html"
+              ><i
+                class="fa-solid fa-cart-shopping"
+                style="color: orange; font-size: 30px"
+                ><p
+                  class="num-p"
+                  style="
+                    position: absolute;
+                    top: -12px;
+                    left: 18px;
+                    color: white;
+                    background-color: red;
+                    padding: 3px 5px;
+                    border-radius: 30px;
+                    font-size: 10px;
+                  "
+                >
+                  0
+                </p></i
+              ></a
+            ></span
+          >
+          <button
+            id="mobile-menu-toggle"
+            class="mobile-menu-toggle"
+            aria-label="Toggle navigation"
+          >
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </ul>
+
+        <!--mobile nav-->
+        <nav id="mobile-menu" class="mobile-menu">
+          <ul class="nav-list">
+            <li><a href="../main.html">Home</a></li>
+            <li class="shop-m">
+              <a href="#!" class="shop-m-toggle"
+                >Shop <i style="color: orange" class="fa fa-caret-down"></i
+              ></a>
+              <ul class="shop-dropdown-m">
+                <li class="shop-m">
+                  <a href="../shop.html" class="shop-m-toggle">All</a>
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../cardio.html" class="shop-m-toggle"
+                    >Cardio Machines</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../weights.html" class="shop-m-toggle"
+                    >Free Weights</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../strength.html" class="shop-m-toggle"
+                    >Strength Stations</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../functional.html" class="shop-m-toggle"
+                    >Cable & Functional Trainers</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../intensity.html" class="shop-m-toggle"
+                    >High-Intensity & Plyo Gear</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../resistance.html" class="shop-m-toggle"
+                    >Resistance & Mobility</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../floors.html" class="shop-m-toggle"
+                    >Floors & Mats</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../accesories.html" class="shop-m-toggle"
+                    >Accessories & Wearables</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../bundles.html" class="shop-m-toggle"
+                    >Bundles & Packages</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <a href="../blog.html" class="custom-back-link">← Back to Blog</a>
+    <section class="custom-blog-wrapper">
+      <article class="custom-post-full">
+        <img
+          src="../images/blog/blog1.jpeg"
+          alt="Strength Training Tips"
+          class="custom-post-full-img"
+        />
+        <div class="custom-post-full-content">
+          <p class="custom-post-full-date">May 12, 2025</p>
+          <h1 class="custom-post-full-title">
+            5 Strength Training Tips for Beginners
+          </h1>
+          <div class="custom-post-full-body">
+            <p>
+              Starting your strength training journey can be incredibly
+              rewarding, leading to increased muscle mass, improved metabolism,
+              stronger bones, and enhanced overall well-being. However, for
+              beginners, it can also feel overwhelming with so much information
+              and potential for injury. This guide will walk you through five
+              essential tips to help you build a solid foundation in strength
+              training, master fundamental techniques, and sidestep common
+              pitfalls. By following these principles, you'll be well on your
+              way to achieving your fitness goals safely and effectively.
+            </p>
+
+            <h2>1. Master Proper Form Before Increasing Weight</h2>
+            <p>
+              This is arguably the most crucial tip for any beginner. Before you
+              even think about lifting heavy, focus on learning the correct form
+              for each exercise. Poor form not only reduces the effectiveness of
+              the exercise but significantly increases your risk of injury.
+              Start with bodyweight exercises or very light weights. Consider
+              watching reputable online tutorials, or even better, working with
+              a qualified personal trainer for a few sessions to learn the
+              basics. Focus on controlled movements, engaging the target
+              muscles, and maintaining proper posture throughout each lift.
+              Remember, quality over quantity is key, especially when you're
+              starting out.
+            </p>
+
+            <h2>2. Start with Compound Exercises</h2>
+            <p>
+              Compound exercises are movements that work multiple muscle groups
+              simultaneously. These are highly efficient for building overall
+              strength and a great starting point for beginners. Examples
+              include:
+            </p>
+            <ul>
+              <li>
+                <strong>Squats:</strong> Work your quads, hamstrings, glutes,
+                and core.
+              </li>
+              <li>
+                <strong>Deadlifts:</strong> Engage your back, glutes,
+                hamstrings, quads, and core. (Ensure you learn proper form for
+                this exercise, as it can be complex).
+              </li>
+              <li>
+                <strong>Bench Press:</strong> Targets your chest, shoulders, and
+                triceps.
+              </li>
+              <li>
+                <strong>Overhead Press:</strong> Works your shoulders, triceps,
+                and upper back.
+              </li>
+              <li>
+                <strong>Rows (e.g., Bent-Over Rows or Cable Rows):</strong>
+                Strengthen your back muscles (lats, rhomboids) and biceps.
+              </li>
+            </ul>
+            <p>
+              By focusing on these foundational movements, you'll build a strong
+              base that will support more isolated exercises later on if you
+              choose to incorporate them.
+            </p>
+
+            <h2>3. Don't Neglect Rest and Recovery</h2>
+            <p>
+              Muscles don't grow during your workouts; they grow during the
+              recovery period afterward. When you lift weights, you create
+              microscopic tears in your muscle fibers. Rest allows these fibers
+              to repair and rebuild stronger. Beginners should aim for at least
+              one full day of rest between strength training sessions targeting
+              the same muscle groups. Ensure you're also getting adequate sleep
+              (7-9 hours per night) as this is when a significant portion of
+              muscle repair and growth hormone release occurs. Overtraining can
+              lead to fatigue, decreased performance, and an increased risk of
+              injury.
+            </p>
+
+            <h2>4. Be Consistent and Patient</h2>
+            <p>
+              Results from strength training take time and consistency. Don't
+              get discouraged if you don't see drastic changes in the first few
+              weeks. Aim for 2-3 strength training sessions per week when
+              starting. Create a schedule that you can realistically stick to.
+              It's better to have shorter, consistent workouts than sporadic,
+              intense ones. Track your progress – whether it's the amount of
+              weight lifted, the number of repetitions, or how you feel – to
+              stay motivated and see how far you've come. Patience is a virtue
+              in strength training; the long-term benefits are well worth the
+              sustained effort.
+            </p>
+
+            <h2>5. Listen to Your Body and Fuel It Properly</h2>
+            <p>
+              Pay attention to the signals your body sends you. While some
+              muscle soreness (Delayed Onset Muscle Soreness - DOMS) is normal,
+              especially when starting a new routine or increasing intensity,
+              sharp or persistent pain is not. If something doesn't feel right,
+              stop the exercise and assess. Don't push through pain, as this can
+              lead to serious injuries.
+            </p>
+            <p>
+              Furthermore, proper nutrition is vital for supporting muscle
+              growth and recovery. Ensure you're consuming enough protein, which
+              is the building block for muscle repair. Complex carbohydrates
+              will provide the energy needed for your workouts, and healthy fats
+              support overall hormone function. Staying hydrated by drinking
+              plenty of water throughout the day is also essential. Think of
+              food as the fuel your body needs to perform and recover
+              effectively.
+            </p>
+            <p>
+              By incorporating these five tips into your routine, you'll
+              establish a strong, safe, and effective strength training practice
+              that will serve you well on your fitness journey. Enjoy the
+              process of getting stronger and healthier!
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- About -->
+        <div class="footer-section footer-about">
+          <h3>About ProGear</h3>
+          <p>
+            ProGear delivers industrial-grade fitness equipment trusted by
+            professionals worldwide. From cardio machines to free weights, we
+            combine durability with cutting-edge innovation.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Social -->
+        <div class="footer-section footer-contact">
+          <h3>Contact Us</h3>
+          <p>123 Fitness Ave.<br />Skopje, North Macedonia</p>
+          <p>Email: support@progear.com<br />Phone: +389 2 123 456</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">© 2025 ProGear. All Rights Reserved.</div>
+    </footer>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

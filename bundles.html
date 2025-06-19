@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <ul class="header-ul">
+          <div>
+            <h1 class="amblem">Pro<span>Gear</span></h1>
+          </div>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="shop"><a href="shop.html">Shop <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="shop-dropdown">
+                        <li><a class="dropdown-header" href="cardio.html">Cardio Machines</a>
+                        <ul>
+                            <li><a href="product.html?id=01">Treadmill X100</a></li>
+                            <li><a href="product.html?id=07">Elliptical Trainer E200</a></li>
+                            <li><a href="product.html?id=08">Rowing Machine R500</a></li>
+                        </ul>
+                        </li>
+                        <li><a class="dropdown-header" href="weights.html">Free Weights</a>
+                        <ul>
+                            <li><a href="product.html?id=03">Free Weight</a></li>
+                        </ul>
+                        </li>
+                        <li><a class="dropdown-header" href="strength.html">Strength Stations</a>
+                        <ul>
+                            <li><a href="product.html?id=02">FID7 Pro Adjustable Bench</a></li>
+                            <li><a href="product.html?id=09">Power Rack PR100</a></li>
+                            <li><a href="product.html?id=10">Cable Crossover CC300</a></li>
+                        </ul>
+                        </li>
+                        <li><a class="dropdown-header" href="functional.html">Cable & Functional Trainers</a>
+                        <ul>
+                            <li><a href="product.html?id=04">Resistance Band Set</a></li>
+                        </ul>
+                        </li>
+                        <li><a class="dropdown-header" href="intensity.html">High-Intensity & Plyo Gear</a>
+                        <ul>
+                            <li><a href="product.html?id=11">Plyo Box Set</a></li>
+                            <li><a href="product.html?id=12">Battle Ropes 50 ft</a></li>
+                        </ul>
+                        </li>
+                        <li><a class="dropdown-header" href="resistance.html">Resistance & Mobility</a>
+                        <ul>
+                            <li><a href="product.html?id=06">
+                              Exercise Ball</a></li>
+                            <li><a href="product.html?id=13">Foam Roller Pro</a></li>
+                            <li><a href="product.html?id=14">Yoga Block Pair</a></li>
+                        </ul>
+                        </li>
+                        <li><a class="dropdown-header" href="floors.html">Floors & Mats</a>
+                        <ul>
+                            <li><a href="product.html?id=05">Yoga Mat</a></li>
+
+                        </ul>
+                        </li>
+                        <li><a class="dropdown-header" href="accesories.html">Accessories & Wearables</a>
+                        <ul>
+                            <li><a href="product.html?id=15">Fitness Tracker Watch</a></li>
+                            <li><a href="product.html?id=16">Lifting Gloves</a></li>
+                        </ul>
+                        </li>
+                        <li><a class="dropdown-header" href="bundles.html">Bundles & Packages</a>
+                        <ul>
+                            <li><a href="product.html?id=17">Home Gym Starter Bundle</a></li>
+                            <li><a href="product.html?id=18">Cardio Duo Pack</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                </li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <span class="cart"
+            ><a href="cart.html"
+              ><i
+                class="fa-solid fa-cart-shopping"
+                style="color: orange; font-size: 30px"
+                ><p
+                  class="num-p"
+                  style="
+                    position: absolute;
+                    top: -12px;
+                    left: 18px;
+                    color: white;
+                    background-color: red;
+                    padding: 3px 5px;
+                    border-radius: 30px;
+                    font-size: 10px;
+                  "
+                >
+                  0
+                </p></i
+              ></a
+            ></span
+          >
+          <button
+            id="mobile-menu-toggle"
+            class="mobile-menu-toggle"
+            aria-label="Toggle navigation"
+          >
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </ul>
+
+        <!--mobile nav-->
+        <nav id="mobile-menu" class="mobile-menu">
+            <ul class="nav-list">
+                <li><a href="main.html">Home</a></li>
+            <li class="shop-m">
+            <a href="#!" class="shop-m-toggle">Shop <i style="color: orange;" class="fa fa-caret-down"></i></a>
+            <ul class="shop-dropdown-m">
+              <li class="shop-m">
+            <a href="shop.html" class="shop-m-toggle">All</a>
+            <ul class="shop-dropdown-m">
+                           
+            </ul>
+            </li>
+            <li class="shop-m">
+            <a href="cardio.html" class="shop-m-toggle">Cardio Machines</a>
+            <ul class="shop-dropdown-m">
+                           
+            </ul>
+            </li>
+            <li class="shop-m">
+            <a href="weights.html" class="shop-m-toggle">Free Weights</a>
+            <ul class="shop-dropdown-m">
+                            
+            </ul>
+            </li>
+            <li class="shop-m">
+            <a href="strength.html" class="shop-m-toggle">Strength Stations</a>
+            <ul class="shop-dropdown-m">
+                           
+            </ul>
+            </li>
+            <li class="shop-m">
+            <a href="functional.html" class="shop-m-toggle">Cable & Functional Trainers</a>
+            <ul class="shop-dropdown-m">
+                            
+            </ul>
+            </li>
+            <li class="shop-m">
+            <a href="intensity.html" class="shop-m-toggle">High-Intensity & Plyo Gear</a>
+            <ul class="shop-dropdown-m">
+
+                           
+            </ul>
+            </li>
+            <li class="shop-m">
+            <a href="resistance.html" class="shop-m-toggle">Resistance & Mobility</a>
+            <ul class="shop-dropdown-m">
+                           
+            </ul>
+            </li>
+            <li class="shop-m">
+            <a href="floors.html" class="shop-m-toggle">Floors & Mats</a>
+            <ul class="shop-dropdown-m">
+           
+                           
+            </ul>
+            </li>
+            <li class="shop-m">
+            <a href="accesories.html" class="shop-m-toggle">Accessories & Wearables</a>
+            <ul class="shop-dropdown-m">
+           
+                           
+            </ul>
+            </li>
+            <li class="shop-m">
+            <a href="bundles.html" class="shop-m-toggle">Bundles & Packages</a>
+            <ul class="shop-dropdown-m">
+
+                           
+            </ul>
+            </li>
+            </ul>
+            </li>
+
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            </nav>
+      </div>
+    </header>
+    <div
+      class="page"
+
+    >
+      <!-- Filters -->
+      <div class="filter-group">
+    <button class="filter-btn" data-category=""><a style="text-decoration: none;"href="shop.html">All</a></button>
+    <button class="filter-btn" data-category="Cardio Machines"><a style="text-decoration: none;" href="cardio.html">Cardio Machines</a></button>
+    <button class="filter-btn" data-category="Free Weights"><a style="text-decoration: none;"  href="weights.html">Free Weights</a></button>
+    <button class="filter-btn" data-category="Strength Stations"><a style="text-decoration: none;"  href="strength.html">Strength Stations</a></button>
+    <button class="filter-btn" data-category="Cable & Functional Trainers">
+      <a style="text-decoration: none;"  href="functional.html">Cable & Functional Trainer</a>
+    </button>
+    <button class="filter-btn" data-category="High-Intensity & Plyo Gear">
+      <a style="text-decoration: none;"  href="intensity.html">High-Intensity & Plyo Gear</a>
+    </button>
+    <button class="filter-btn" data-category="Resistance & Mobility">
+      <a style="text-decoration: none;"  href="resistance.html">Resistance & Mobility</a>
+    </button>
+    <button class="filter-btn" data-category="Floors & Mats"><a style="text-decoration: none;"  href="floors.html">Floors & Mats</a></button>
+    <button class="filter-btn" data-category="Accessories & Wearables">
+      <a style="text-decoration: none;"  href="accesories.html">Accessories & Wearable</a>
+    </button>
+    <button class="filter-btn" data-category="Bundles & Packages" style="background-color: orange;">
+      <a style="text-decoration: none;color: white"  href="bundles.html">Bundles & Packages</a>
+    </button>
+    </div>
+
+      </div>
+     
+     
+        <!-- Sort control -->
+        
+
+        <!-- Products -->
+        <section class="products products-js"></section>
+      </div>
+   
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- About -->
+        <div class="footer-section footer-about">
+          <h3>About ProGear</h3>
+          <p>
+            ProGear delivers industrial-grade fitness equipment trusted by
+            professionals worldwide. From cardio machines to free weights, we
+            combine durability with cutting-edge innovation.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Social -->
+        <div class="footer-section footer-contact">
+          <h3>Contact Us</h3>
+          <p>123 Fitness Ave.<br />Skopje, North Macedonia</p>
+          <p>Email: support@progear.com<br />Phone: +389 2 123 456</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">© 2025 ProGear. All Rights Reserved.</div>
+    </footer>
+    <script type="module" src="main.html"></script>
+    <script type="module" src="js/bundles.js"></script>
+  </body>
+</html>

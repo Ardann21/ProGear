@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <ul class="header-ul">
+          <div>
+            <h1 class="amblem">Pro<span>Gear</span></h1>
+          </div>
+          <li><a href="../main.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li class="shop">
+            <a href="../shop.html"
+              >Shop <i class="fa-solid fa-caret-down"></i
+            ></a>
+            <ul class="shop-dropdown">
+              <li>
+                <a class="dropdown-header" href="../cardio.html"
+                  >Cardio Machines</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=01">Treadmill X100</a></li>
+                  <li>
+                    <a href="../product.html?id=07">Elliptical Trainer E200</a>
+                  </li>
+                  <li>
+                    <a href="../product.html?id=08">Rowing Machine R500</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../weights.html"
+                  >Free Weights</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=03">Free Weight</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../strength.html"
+                  >Strength Stations</a
+                >
+                <ul>
+                  <li>
+                    <a href="../product.html?id=02"
+                      >FID7 Pro Adjustable Bench</a
+                    >
+                  </li>
+                  <li><a href="../product.html?id=09">Power Rack PR100</a></li>
+                  <li>
+                    <a href="../product.html?id=10">Cable Crossover CC300</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../functional.html"
+                  >Cable & Functional Trainers</a
+                >
+                <ul>
+                  <li>
+                    <a href="../product.html?id=04">Resistance Band Set</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../intensity.html"
+                  >High-Intensity & Plyo Gear</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=11">Plyo Box Set</a></li>
+                  <li>
+                    <a href="../product.html?id=12">Battle Ropes 50 ft</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../resistance.html"
+                  >Resistance & Mobility</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=06"> Exercise Ball</a></li>
+                  <li><a href="../product.html?id=13">Foam Roller Pro</a></li>
+                  <li><a href="../product.html?id=14">Yoga Block Pair</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../floors.html"
+                  >Floors & Mats</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=05">Yoga Mat</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../accesories.html"
+                  >Accessories & Wearables</a
+                >
+                <ul>
+                  <li>
+                    <a href="../product.html?id=15">Fitness Tracker Watch</a>
+                  </li>
+                  <li><a href="../product.html?id=16">Lifting Gloves</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../bundles.html"
+                  >Bundles & Packages</a
+                >
+                <ul>
+                  <li>
+                    <a href="../product.html?id=17">Home Gym Starter Bundle</a>
+                  </li>
+                  <li><a href="../product.html?id=18">Cardio Duo Pack</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <span class="cart"
+            ><a href="../cart.html"
+              ><i
+                class="fa-solid fa-cart-shopping"
+                style="color: orange; font-size: 30px"
+                ><p
+                  class="num-p"
+                  style="
+                    position: absolute;
+                    top: -12px;
+                    left: 18px;
+                    color: white;
+                    background-color: red;
+                    padding: 3px 5px;
+                    border-radius: 30px;
+                    font-size: 10px;
+                  "
+                >
+                  0
+                </p></i
+              ></a
+            ></span
+          >
+          <button
+            id="mobile-menu-toggle"
+            class="mobile-menu-toggle"
+            aria-label="Toggle navigation"
+          >
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </ul>
+
+        <!--mobile nav-->
+        <nav id="mobile-menu" class="mobile-menu">
+          <ul class="nav-list">
+            <li><a href="../main.html">Home</a></li>
+            <li class="shop-m">
+              <a href="#!" class="shop-m-toggle"
+                >Shop <i style="color: orange" class="fa fa-caret-down"></i
+              ></a>
+              <ul class="shop-dropdown-m">
+                <li class="shop-m">
+                  <a href="../shop.html" class="shop-m-toggle">All</a>
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../cardio.html" class="shop-m-toggle"
+                    >Cardio Machines</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../weights.html" class="shop-m-toggle"
+                    >Free Weights</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../strength.html" class="shop-m-toggle"
+                    >Strength Stations</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../functional.html" class="shop-m-toggle"
+                    >Cable & Functional Trainers</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../intensity.html" class="shop-m-toggle"
+                    >High-Intensity & Plyo Gear</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../resistance.html" class="shop-m-toggle"
+                    >Resistance & Mobility</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../floors.html" class="shop-m-toggle"
+                    >Floors & Mats</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../accesories.html" class="shop-m-toggle"
+                    >Accessories & Wearables</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../bundles.html" class="shop-m-toggle"
+                    >Bundles & Packages</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Blog Section -->
+    <a href="../blog.html" class="custom-back-link">← Back to Blog</a>
+    <section class="custom-blog-wrapper">
+      <article class="custom-post-full">
+        <img
+          src="../images/blog/blog5.jpeg"
+          alt="Choosing the Right Home Gym Equipment"
+          class="custom-post-full-img"
+        />
+        <div class="custom-post-full-content">
+          <p class="custom-post-full-date">April 15, 2025</p>
+          <h1 class="custom-post-full-title">
+            How to Choose the Right Home Gym Equipment
+          </h1>
+          <div class="custom-post-full-body">
+            <p>
+              Investing in home gym equipment can be exciting, but it also comes
+              with many choices and trade-offs—especially when you’re working
+              within a budget or limited square footage. This guide will walk
+              you through the key considerations—from available space and
+              training goals to longevity and resale value—so that you end up
+              with a setup that’s both practical and motivating. By the end,
+              you’ll have a clear plan for purchasing equipment that actually
+              gets used, instead of gathering dust in the corner.
+            </p>
+
+            <h2>1. Define Your Fitness Goals and Preferred Modalities</h2>
+            <p>
+              Before spending a dime, get crystal clear on what you want to
+              achieve. Are you focused on:
+            </p>
+            <ul>
+              <li>
+                <strong>Strength Training:</strong> Prioritize free weights
+                (dumbbells, barbells) and sturdy racks.
+              </li>
+              <li>
+                <strong>Cardio Endurance:</strong> Look into treadmills,
+                stationary bikes, or jump ropes.
+              </li>
+              <li>
+                <strong>Functional Fitness:</strong> Consider kettlebells,
+                resistance bands, suspension trainers, and plyo boxes.
+              </li>
+              <li>
+                <strong>Mobility and Flexibility:</strong> A high-density mat,
+                foam roller, and yoga blocks may be enough.
+              </li>
+            </ul>
+            <p>
+              Clarifying your primary focus allows you to allocate most of your
+              budget to those core needs, rather than buying every trendy
+              gadget. If you want a balanced routine, create a rough mix—say 60%
+              strength and 40% cardio—and shop accordingly.
+            </p>
+
+            <h2>2. Measure Your Available Space Accurately</h2>
+            <p>
+              Square footage (or cubic footage) dictates what fits—literally.
+              Follow these steps:
+            </p>
+            <ul>
+              <li>
+                <strong>Sketch the Layout:</strong> Draw your room on graph
+                paper or use a phone app. Mark door swings and any obstructions
+                (radiators, low ceilings).
+              </li>
+              <li>
+                <strong>Allow Clearance:</strong> A flat bench requires roughly
+                6×3 ft of floor space; a treadmill needs about 7×3 ft plus space
+                behind it for safety. Add 1–2 ft of clearance on all sides for
+                access and movement.
+              </li>
+              <li>
+                <strong>Vertical Space:</strong> If you’re tall or planning
+                pull-ups, ensure a minimum ceiling height of 8 ft. Squat racks
+                typically need 7 ft at the top of the bar, but factor in room
+                for plates and overhead extensions.
+              </li>
+            </ul>
+            <p>
+              Once you have exact measurements, compare them to manufacturer
+              specs—never guess. If your space is tight, look at foldable or
+              wall-mounted options (e.g., folding squat racks, compact rowing
+              machines) to maximize floor area.
+            </p>
+
+            <h2>3. Establish a Realistic Budget and Prioritize Quality</h2>
+            <p>
+              It’s tempting to chase “the cheapest deal,” but extremely low-cost
+              equipment often breaks or feels unsafe. Instead:
+            </p>
+            <ul>
+              <li>
+                <strong>Set a Total Budget:</strong> For a basic strength setup
+                (bench, barbell, plates, rack), expect to spend at least
+                $800–$1,200. Cardio machines (treadmill, bike) range from $300
+                for a basic jump rope to $2,500+ for a commercial-grade
+                treadmill.
+              </li>
+              <li>
+                <strong>Prioritize Durability:</strong> Plate steel, solid
+                knurling on barbells, and sturdy welding on racks pay off
+                long-term. A well-built barbell can last decades; a $50 bench
+                might need replacing in a year.
+              </li>
+              <li>
+                <strong>Buy Used When Sensible:</strong> Search for lightly used
+                options (local classifieds, Facebook Marketplace). Many lifters
+                sell barely-used power racks or older commercial treadmills at
+                half price. Inspect welds, bearings, and upholstery thoroughly.
+              </li>
+            </ul>
+            <p>
+              Make a list of “must-have” versus “nice-to-have” items. Allocate
+              60–70% of your budget to the must-haves—those you’ll use daily.
+              Use any leftover funds for accessories like bands, stability
+              balls, or small cardio tools.
+            </p>
+
+            <h2>4. Research Versatility and Modular Designs</h2>
+            <p>
+              Especially in a home gym, multi-purpose equipment gives you the
+              biggest bang for your buck:
+            </p>
+            <ul>
+              <li>
+                <strong>Adjustable Dumbbells:</strong> Replace an entire rack of
+                fixed weights with one set that goes from 5–50 lbs or more.
+              </li>
+              <li>
+                <strong>Fold-Down Squat Rack:</strong> Mounts to the wall and
+                folds away when not in use, freeing up floor space.
+              </li>
+              <li>
+                <strong>Bench with Incline/Decline Settings:</strong> Allows
+                pressing, rows, step-ups, and ab work on one piece.
+              </li>
+              <li>
+                <strong>Pull-Up Bar with Attachments:</strong> Many wall-mounted
+                bars accept resistance bands, suspension trainers, and landmine
+                attachments.
+              </li>
+            </ul>
+            <p>
+              Prioritizing modularity means you can change workouts week-to-week
+              without buying new items. For example, a bench with removable
+              uprights can serve as a bench press station and squat rack.
+            </p>
+
+            <h2>5. Factor in Maintenance, Warranty, and Resale Value</h2>
+            <p>
+              Good equipment should come with at least a 3-year warranty on
+              welds, frames, and bushings. Before purchasing:
+            </p>
+            <ul>
+              <li>
+                <strong>Read Warranty Details:</strong> Check what’s
+                covered—some warranties exclude normal wear-and-tear (e.g.,
+                barbell knurling wearing down).
+              </li>
+              <li>
+                <strong>Consider Maintenance Needs:</strong> Treadmill rollers
+                and deck belts need occasional lubrication; adjustable bench
+                pivots require lubrication every 6–12 months. Factor these small
+                costs into long-term ownership.
+              </li>
+              <li>
+                <strong>Keep Original Packaging:</strong> For items you might
+                resell, having the original box and manual boosts your resale
+                price by 10–20%.
+              </li>
+            </ul>
+            <p>
+              If your tastes or goals change, you can recoup a significant
+              portion of your investment by selling equipment in excellent
+              condition—especially barbells, dumbbells, and plated sets, which
+              always have demand.
+            </p>
+
+            <h2>Putting It All Together</h2>
+            <p>
+              Choosing the right home gym equipment starts with clear goals and
+              accurate measurements. By setting a realistic budget, focusing on
+              durable, modular pieces, and factoring in maintenance and resale,
+              you’ll create a functional setup that stays motivating for years.
+              Remember:
+            </p>
+            <ul>
+              <li>
+                <strong>Plan First:</strong> Sketch your space, list must-haves,
+                and compare dimensions before ordering.
+              </li>
+              <li>
+                <strong>Quality Over Quantity:</strong> It’s better to buy one
+                high-quality barbell and plates than five cheap accessories you
+                never use.
+              </li>
+              <li>
+                <strong>Think Long-Term:</strong> Equipment that’s easy to
+                maintain and has good resale potential keeps your investment
+                safe.
+              </li>
+            </ul>
+            <p>
+              Now that you know how to weigh space, budget, and versatility, go
+              ahead and start building a home gym that’s perfectly tailored to
+              your needs—one smart purchase at a time.
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- About -->
+        <div class="footer-section footer-about">
+          <h3>About ProGear</h3>
+          <p>
+            ProGear delivers industrial-grade fitness equipment trusted by
+            professionals worldwide. From cardio machines to free weights, we
+            combine durability with cutting-edge innovation.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Social -->
+        <div class="footer-section footer-contact">
+          <h3>Contact Us</h3>
+          <p>123 Fitness Ave.<br />Skopje, North Macedonia</p>
+          <p>Email: support@progear.com<br />Phone: +389 2 123 456</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">© 2025 ProGear. All Rights Reserved.</div>
+    </footer>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

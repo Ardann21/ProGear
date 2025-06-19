@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <ul class="header-ul">
+          <div>
+            <h1 class="amblem">Pro<span>Gear</span></h1>
+          </div>
+          <li><a href="../main.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li class="shop">
+            <a href="../shop.html"
+              >Shop <i class="fa-solid fa-caret-down"></i
+            ></a>
+            <ul class="shop-dropdown">
+              <li>
+                <a class="dropdown-header" href="../cardio.html"
+                  >Cardio Machines</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=01">Treadmill X100</a></li>
+                  <li>
+                    <a href="../product.html?id=07">Elliptical Trainer E200</a>
+                  </li>
+                  <li>
+                    <a href="../product.html?id=08">Rowing Machine R500</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../weights.html"
+                  >Free Weights</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=03">Free Weight</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../strength.html"
+                  >Strength Stations</a
+                >
+                <ul>
+                  <li>
+                    <a href="../product.html?id=02"
+                      >FID7 Pro Adjustable Bench</a
+                    >
+                  </li>
+                  <li><a href="../product.html?id=09">Power Rack PR100</a></li>
+                  <li>
+                    <a href="../product.html?id=10">Cable Crossover CC300</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../functional.html"
+                  >Cable & Functional Trainers</a
+                >
+                <ul>
+                  <li>
+                    <a href="../product.html?id=04">Resistance Band Set</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../intensity.html"
+                  >High-Intensity & Plyo Gear</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=11">Plyo Box Set</a></li>
+                  <li>
+                    <a href="../product.html?id=12">Battle Ropes 50 ft</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../resistance.html"
+                  >Resistance & Mobility</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=06"> Exercise Ball</a></li>
+                  <li><a href="../product.html?id=13">Foam Roller Pro</a></li>
+                  <li><a href="../product.html?id=14">Yoga Block Pair</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../floors.html"
+                  >Floors & Mats</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=05">Yoga Mat</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../accesories.html"
+                  >Accessories & Wearables</a
+                >
+                <ul>
+                  <li>
+                    <a href="../product.html?id=15">Fitness Tracker Watch</a>
+                  </li>
+                  <li><a href="../product.html?id=16">Lifting Gloves</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../bundles.html"
+                  >Bundles & Packages</a
+                >
+                <ul>
+                  <li>
+                    <a href="../product.html?id=17">Home Gym Starter Bundle</a>
+                  </li>
+                  <li><a href="../product.html?id=18">Cardio Duo Pack</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <span class="cart"
+            ><a href="../cart.html"
+              ><i
+                class="fa-solid fa-cart-shopping"
+                style="color: orange; font-size: 30px"
+                ><p
+                  class="num-p"
+                  style="
+                    position: absolute;
+                    top: -12px;
+                    left: 18px;
+                    color: white;
+                    background-color: red;
+                    padding: 3px 5px;
+                    border-radius: 30px;
+                    font-size: 10px;
+                  "
+                >
+                  0
+                </p></i
+              ></a
+            ></span
+          >
+          <button
+            id="mobile-menu-toggle"
+            class="mobile-menu-toggle"
+            aria-label="Toggle navigation"
+          >
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </ul>
+
+        <!--mobile nav-->
+        <nav id="mobile-menu" class="mobile-menu">
+          <ul class="nav-list">
+            <li><a href="../main.html">Home</a></li>
+            <li class="shop-m">
+              <a href="#!" class="shop-m-toggle"
+                >Shop <i style="color: orange" class="fa fa-caret-down"></i
+              ></a>
+              <ul class="shop-dropdown-m">
+                <li class="shop-m">
+                  <a href="../shop.html" class="shop-m-toggle">All</a>
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../cardio.html" class="shop-m-toggle"
+                    >Cardio Machines</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../weights.html" class="shop-m-toggle"
+                    >Free Weights</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../strength.html" class="shop-m-toggle"
+                    >Strength Stations</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../functional.html" class="shop-m-toggle"
+                    >Cable & Functional Trainers</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../intensity.html" class="shop-m-toggle"
+                    >High-Intensity & Plyo Gear</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../resistance.html" class="shop-m-toggle"
+                    >Resistance & Mobility</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../floors.html" class="shop-m-toggle"
+                    >Floors & Mats</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../accesories.html" class="shop-m-toggle"
+                    >Accessories & Wearables</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../bundles.html" class="shop-m-toggle"
+                    >Bundles & Packages</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Blog Section -->
+    <a href="../blog.html" class="custom-back-link">← Back to Blog</a>
+    <section class="custom-blog-wrapper">
+      <article class="custom-post-full">
+        <img
+          src="../images/blog/blog4.jpeg"
+          alt="Nutrition Strategies for Muscle Growth"
+          class="custom-post-full-img"
+        />
+        <div class="custom-post-full-content">
+          <p class="custom-post-full-date">April 28, 2025</p>
+          <h1 class="custom-post-full-title">
+            Top Nutrition Strategies for Muscle Growth
+          </h1>
+          <div class="custom-post-full-body">
+            <p>
+              For anyone aiming to build muscle, proper nutrition is just as
+              crucial as lifting weights. Without the right balance of
+              macronutrients, meal timing, and adequate hydration, even the most
+              disciplined training plan can fall short. In this guide, we’ll
+              explore evidence-based nutrition strategies—focusing on protein,
+              carbohydrates, fats, micronutrients, and supplements—that will
+              help you maximize muscle protein synthesis, accelerate recovery,
+              and push your gains to the next level.
+            </p>
+
+            <h2>1. Prioritize Protein Intake and Distribution</h2>
+            <p>
+              Protein is the building block of muscle tissue. To optimize muscle
+              growth, aim for:
+            </p>
+            <ul>
+              <li>
+                <strong>1.6–2.2 g per kg of bodyweight:</strong> Research shows
+                that this range supports hypertrophy in most lifters.
+              </li>
+              <li>
+                <strong>Leucine-rich sources:</strong> Foods like whey protein,
+                chicken breast, lean beef, and eggs are high in leucine—a key
+                amino acid that triggers muscle protein synthesis (MPS).
+              </li>
+              <li>
+                <strong>Even distribution:</strong> Instead of consuming most of
+                your protein in one meal, spread it across 3–5 servings per day
+                (20–40 g per serving). This maximizes the anabolic response each
+                time you eat.
+              </li>
+            </ul>
+            <p>
+              For example, a 75 kg athlete would target 120–165 g of protein
+              daily. Divided into four meals, each meal would provide roughly
+              30–40 g of protein. Consider whey or casein shakes immediately
+              post-workout and before bed to hit your daily protein goal more
+              easily.
+            </p>
+
+            <h2>2. Optimize Carbohydrate Timing for Energy and Recovery</h2>
+            <p>
+              Carbs are crucial for replenishing muscle glycogen and providing
+              fuel for intense workouts. Follow these guidelines:
+            </p>
+            <ul>
+              <li>
+                <strong>Pre-workout (1–2 hours before):</strong> 1–2 g of carbs
+                per kg of bodyweight (oatmeal, rice, sweet potatoes) to ensure
+                sustained energy during training.
+              </li>
+              <li>
+                <strong>Intra-workout (optional):</strong> For sessions over 90
+                minutes or very high intensity, sip on a 6–8% carb solution
+                (glucose/maltodextrin) to maintain blood glucose and delay
+                fatigue.
+              </li>
+              <li>
+                <strong>Post-workout (within 30 minutes):</strong> 0.8–1 g of
+                carbs per kg (banana, white rice, sports drink) paired with
+                0.3–0.4 g/kg of protein to maximize glycogen resynthesis and
+                MPS.
+              </li>
+            </ul>
+            <p>
+              On rest days, lower overall carb intake slightly (1–2 g/kg) while
+              still meeting protein targets. This ensures you’re not
+              overconsuming calories when training volume is reduced.
+            </p>
+
+            <h2>3. Include Healthy Fats for Hormonal Support</h2>
+            <p>
+              Dietary fats are vital for hormone production (including
+              testosterone) and joint health. Aim for 20–30% of total calories
+              from fats, focusing on:
+            </p>
+            <ul>
+              <li>
+                <strong>Monounsaturated fats:</strong> Olive oil, avocados, and
+                nuts help maintain healthy lipid profiles and support satiety.
+              </li>
+              <li>
+                <strong>Polyunsaturated fats:</strong> Fatty fish (salmon,
+                mackerel) and flaxseeds provide essential omega-3s, which reduce
+                inflammation and aid recovery.
+              </li>
+              <li>
+                <strong>Avoid excessive saturated fats:</strong> While small
+                amounts (olive oil, dairy) are fine, keep saturated fats under
+                10% of total calories to promote cardiovascular health.
+              </li>
+            </ul>
+            <p>
+              Example: On a 2,500 kcal day, 25% from fats equals ~70 g of fat.
+              Distribute these across meals (e.g., olive oil on salads, a
+              handful of nuts, fatty fish twice weekly).
+            </p>
+
+            <h2>4. Leverage Meal Frequency and Timing</h2>
+            <p>
+              Although total daily calories and macronutrients matter most,
+              strategic meal timing can optimize recovery:
+            </p>
+            <ul>
+              <li>
+                <strong>3–5 meals per day:</strong> Spacing meals every 3–5
+                hours maintains a steady flow of amino acids to muscles,
+                preventing catabolism.
+              </li>
+              <li>
+                <strong>Pre-bed protein:</strong> Consuming 30–40 g of casein
+                protein 30 minutes before sleep sustains MPS overnight. Greek
+                yogurt or a slow-digesting casein shake works well.
+              </li>
+              <li>
+                <strong>Post-training window:</strong> Aim to consume a
+                protein-carb meal or shake within 30 minutes of finishing your
+                session to kickstart recovery mechanisms.
+              </li>
+            </ul>
+            <p>
+              Some lifters also practice <strong>“carb cycling”</strong>,
+              whereby they slightly reduce carbs on rest days and increase them
+              on intense training days—this can help manage body fat while still
+              fueling hard workouts.
+            </p>
+
+            <h2>5. Hydration and Micronutrient Density</h2>
+            <p>
+              Dehydration can impair strength and performance. Follow these
+              tips:
+            </p>
+            <ul>
+              <li>
+                <strong>Daily water target:</strong> 35–45 mL per kg of
+                bodyweight (for a 75 kg athlete, ~2.6–3.4 L/day). Increase by
+                500–750 mL for every hour of intense training.
+              </li>
+              <li>
+                <strong>Electrolyte balance:</strong> Sodium, potassium, and
+                magnesium are lost through sweat. Add a pinch of sea salt to
+                water or consume an electrolyte drink if you sweat heavily.
+              </li>
+              <li>
+                <strong>Micronutrient-rich foods:</strong> Aim for colorful
+                vegetables (spinach, bell peppers, broccoli) and fruits
+                (berries, oranges) to ensure you’re getting vitamins and
+                minerals critical for energy production and immune function.
+              </li>
+            </ul>
+            <p>
+              A simple way to track hydration is to monitor urine color (pale
+              straw is ideal) and weigh yourself before/after workouts to gauge
+              fluid loss.
+            </p>
+
+            <h2>6. Smart Supplementation to Complement Whole Foods</h2>
+            <p>
+              Supplements can help fill gaps, but they should never replace a
+              balanced diet. Consider the following:
+            </p>
+            <ul>
+              <li>
+                <strong>Whey Protein Isolate:</strong> Quick-digesting,
+                high-leucine formula—ideal post-workout to spike amino acids.
+              </li>
+              <li>
+                <strong>Creatine Monohydrate:</strong> 3–5 g/day; proven to
+                increase strength, power, and lean mass by enhancing
+                phosphocreatine stores.
+              </li>
+              <li>
+                <strong>Fish Oil (Omega-3):</strong> 2–3 g EPA/DHA per day
+                reduces inflammation, supports joint health, and may improve
+                muscle protein synthesis signaling.
+              </li>
+              <li>
+                <strong>Vitamin D3:</strong> At least 2,000 IU/day if levels are
+                low (consult a blood test). Adequate vitamin D supports
+                testosterone production and immune health.
+              </li>
+              <li>
+                <strong>Beta-Alanine (optional):</strong> 3–4 g/day; can improve
+                high-intensity exercise performance by buffering lactic acid
+                buildup.
+              </li>
+              <li>
+                <strong>Multivitamin:</strong> A high-quality formula ensures
+                you’re covering any micronutrient shortfalls, especially if
+                calorie intake fluctuates.
+              </li>
+            </ul>
+            <p>
+              Always choose third-party tested brands (Informed Sport, NSF
+              Certified for Sport) to guarantee purity and accurate dosing.
+            </p>
+
+            <h2>7. Sample Daily Eating Plan</h2>
+            <p>
+              Below is an example for a 75 kg male training 5 days per week,
+              targeting 2,800 kcal/day (2.0 g/kg protein, 4 g/kg carbs, 1 g/kg
+              fat). Adjust based on your own bodyweight and goals.
+            </p>
+            <ul>
+              <li>
+                <strong>Meal 1 (7:00 AM):</strong> 3 whole eggs + 3 egg whites,
+                1 cup cooked oatmeal, 1 cup mixed berries, 1 tbsp almond butter
+                • 40 g protein • 60 g carbs • 20 g fat • ~540 kcal
+              </li>
+              <li>
+                <strong>Meal 2 (10:00 AM):</strong> Protein shake (30 g whey), 1
+                medium banana, 10 raw almonds • 35 g protein • 35 g carbs • 10 g
+                fat • ~350 kcal
+              </li>
+              <li>
+                <strong>Pre-Workout (12:30 PM):</strong> 1 cup cooked white
+                rice, 150 g grilled chicken breast • 40 g protein • 45 g carbs •
+                5 g fat • ~380 kcal
+              </li>
+              <li>
+                <strong>Post-Workout (2:30 PM):</strong> Whey isolate shake (30
+                g protein), 1 large apple • 30 g protein • 30 g carbs • 1 g fat
+                • ~230 kcal
+              </li>
+              <li>
+                <strong>Meal 4 (5:00 PM):</strong> 200 g salmon fillet, 1.5 cups
+                quinoa, 1 cup steamed broccoli • 50 g protein • 55 g carbs • 18
+                g fat • ~650 kcal
+              </li>
+              <li>
+                <strong>Meal 5 (8:00 PM):</strong> 1 cup Greek yogurt (2% fat),
+                1/2 cup granola, 1 tbsp honey • 25 g protein • 50 g carbs • 10 g
+                fat • ~450 kcal
+              </li>
+              <li>
+                <strong>Before Bed (10:30 PM):</strong> Casein protein shake (30
+                g casein), 1 tbsp natural peanut butter • 32 g protein • 5 g
+                carbs • 12 g fat • ~290 kcal
+              </li>
+            </ul>
+            <p>
+              Total: ~252 g protein, 280 g carbs, 76 g fat (~2,800 kcal). Tweak
+              portion sizes and macros to fit your bodyweight and dietary
+              preferences.
+            </p>
+
+            <h2>Putting It All Together</h2>
+            <p>
+              Effective muscle growth hinges on consistent training—but equally
+              on fueling your body correctly. By prioritizing high-quality
+              protein, timing carbohydrates around your workouts, including
+              healthy fats for hormonal support, staying hydrated, and
+              leveraging key supplements responsibly, you’ll create an
+              environment for maximum muscle protein synthesis and recovery.
+              Remember, patience and consistency win: track your progress,
+              adjust as needed, and enjoy the process of getting stronger and
+              bigger—one meal (and workout) at a time.
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- About -->
+        <div class="footer-section footer-about">
+          <h3>About ProGear</h3>
+          <p>
+            ProGear delivers industrial-grade fitness equipment trusted by
+            professionals worldwide. From cardio machines to free weights, we
+            combine durability with cutting-edge innovation.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Social -->
+        <div class="footer-section footer-contact">
+          <h3>Contact Us</h3>
+          <p>123 Fitness Ave.<br />Skopje, North Macedonia</p>
+          <p>Email: support@progear.com<br />Phone: +389 2 123 456</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">© 2025 ProGear. All Rights Reserved.</div>
+    </footer>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <ul class="header-ul">
+          <div>
+            <h1 class="amblem">Pro<span>Gear</span></h1>
+          </div>
+          <li><a href="../main.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li class="shop">
+            <a href="../shop.html"
+              >Shop <i class="fa-solid fa-caret-down"></i
+            ></a>
+            <ul class="shop-dropdown">
+              <li>
+                <a class="dropdown-header" href="../cardio.html"
+                  >Cardio Machines</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=01">Treadmill X100</a></li>
+                  <li>
+                    <a href="../product.html?id=07">Elliptical Trainer E200</a>
+                  </li>
+                  <li>
+                    <a href="../product.html?id=08">Rowing Machine R500</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../weights.html"
+                  >Free Weights</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=03">Free Weight</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../strength.html"
+                  >Strength Stations</a
+                >
+                <ul>
+                  <li>
+                    <a href="../product.html?id=02"
+                      >FID7 Pro Adjustable Bench</a
+                    >
+                  </li>
+                  <li><a href="../product.html?id=09">Power Rack PR100</a></li>
+                  <li>
+                    <a href="../product.html?id=10">Cable Crossover CC300</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../functional.html"
+                  >Cable & Functional Trainers</a
+                >
+                <ul>
+                  <li>
+                    <a href="../product.html?id=04">Resistance Band Set</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../intensity.html"
+                  >High-Intensity & Plyo Gear</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=11">Plyo Box Set</a></li>
+                  <li>
+                    <a href="../product.html?id=12">Battle Ropes 50 ft</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../resistance.html"
+                  >Resistance & Mobility</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=06"> Exercise Ball</a></li>
+                  <li><a href="../product.html?id=13">Foam Roller Pro</a></li>
+                  <li><a href="../product.html?id=14">Yoga Block Pair</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../floors.html"
+                  >Floors & Mats</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=05">Yoga Mat</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../accesories.html"
+                  >Accessories & Wearables</a
+                >
+                <ul>
+                  <li>
+                    <a href="../product.html?id=15">Fitness Tracker Watch</a>
+                  </li>
+                  <li><a href="../product.html?id=16">Lifting Gloves</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../bundles.html"
+                  >Bundles & Packages</a
+                >
+                <ul>
+                  <li>
+                    <a href="../product.html?id=17">Home Gym Starter Bundle</a>
+                  </li>
+                  <li><a href="../product.html?id=18">Cardio Duo Pack</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <span class="cart"
+            ><a href="../cart.html"
+              ><i
+                class="fa-solid fa-cart-shopping"
+                style="color: orange; font-size: 30px"
+                ><p
+                  class="num-p"
+                  style="
+                    position: absolute;
+                    top: -12px;
+                    left: 18px;
+                    color: white;
+                    background-color: red;
+                    padding: 3px 5px;
+                    border-radius: 30px;
+                    font-size: 10px;
+                  "
+                >
+                  0
+                </p></i
+              ></a
+            ></span
+          >
+          <button
+            id="mobile-menu-toggle"
+            class="mobile-menu-toggle"
+            aria-label="Toggle navigation"
+          >
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </ul>
+
+        <!--mobile nav-->
+        <nav id="mobile-menu" class="mobile-menu">
+          <ul class="nav-list">
+            <li><a href="../main.html">Home</a></li>
+            <li class="shop-m">
+              <a href="#!" class="shop-m-toggle"
+                >Shop <i style="color: orange" class="fa fa-caret-down"></i
+              ></a>
+              <ul class="shop-dropdown-m">
+                <li class="shop-m">
+                  <a href="../shop.html" class="shop-m-toggle">All</a>
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../cardio.html" class="shop-m-toggle"
+                    >Cardio Machines</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../weights.html" class="shop-m-toggle"
+                    >Free Weights</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../strength.html" class="shop-m-toggle"
+                    >Strength Stations</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../functional.html" class="shop-m-toggle"
+                    >Cable & Functional Trainers</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../intensity.html" class="shop-m-toggle"
+                    >High-Intensity & Plyo Gear</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../resistance.html" class="shop-m-toggle"
+                    >Resistance & Mobility</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../floors.html" class="shop-m-toggle"
+                    >Floors & Mats</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../accesories.html" class="shop-m-toggle"
+                    >Accessories & Wearables</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../bundles.html" class="shop-m-toggle"
+                    >Bundles & Packages</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Blog Section -->
+
+    <a href="../blog.html" class="custom-back-link">← Back to Blog</a>
+    <section class="custom-blog-wrapper">
+      <article class="custom-post-full">
+        <img
+          src="../images/blog/blog6.jpeg"
+          alt="Maintaining Your Fitness Equipment"
+          class="custom-post-full-img"
+        />
+        <div class="custom-post-full-content">
+          <p class="custom-post-full-date">April 1, 2025</p>
+          <h1 class="custom-post-full-title">
+            Complete Guide to Maintaining Your Fitness Equipment
+          </h1>
+          <div class="custom-post-full-body">
+            <p>
+              Keeping your fitness machines and gear in top working order not
+              only extends their lifespan but also ensures safe, smooth workouts
+              every time. Whether you’re using a treadmill, stationary bike,
+              weight bench, or free weights, a few simple maintenance
+              routines—cleaning, lubrication, inspections, and timely part
+              replacements—will prevent breakdowns and keep your home or gym
+              environment hygienic. This guide walks you through step-by-step
+              practices to keep everything running like new.
+            </p>
+
+            <h2>1. Daily & Weekly Cleaning Routines</h2>
+            <p>
+              Sweat, dust, and grime build up quickly on frequently used
+              equipment. Regular cleaning prevents corrosion, bacterial growth,
+              and sticky handles.
+            </p>
+            <ul>
+              <li>
+                <strong>Wipe Down After Each Use:</strong> Keep a microfiber
+                cloth and a mild, non-abrasive cleaner handy. After every
+                session, wipe handles, consoles, seat upholstery, and
+                touchpoints on treadmills or ellipticals to remove sweat and
+                oils.
+              </li>
+              <li>
+                <strong>Deep Clean Weekly:</strong> Once a week, unplug machines
+                before cleaning. Use a soft brush attachment on a vacuum to
+                remove dust from vents, motor housings, and around the base.
+                Then, spray a gentle disinfectant (or a 1:10 vinegar‐to‐water
+                solution) onto a cloth—never directly onto electronics—and wipe
+                all surfaces, including frame tubes, foot pedals, and weight
+                stacks.
+              </li>
+              <li>
+                <strong>Upholstery & Foam Pads:</strong> If you have a bench or
+                ab roller with foam padding, check for cracks in vinyl covers.
+                Clean with mild soap and warm water. Apply a vinyl protectant
+                once a month to prevent cracking.
+              </li>
+            </ul>
+
+            <h2>2. Lubrication & Mechanical Checks</h2>
+            <p>
+              Proper lubrication reduces friction, prevents squeaks, and ensures
+              smooth belt and chain operation. Frequency depends on usage and
+              manufacturer recommendations.
+            </p>
+            <ul>
+              <li>
+                <strong>Treadmill Belt & Deck:</strong> Every 50–100 hours of
+                running, apply a silicone‐based treadmill lubricant under the
+                belt (following the machine’s service manual). loosen the belt
+                to drip lubricant along the deck, then walk the belt slowly to
+                spread. Check belt tension and alignment monthly: you should be
+                able to lift each side of the belt 2–3 inches away from the
+                deck.
+              </li>
+              <li>
+                <strong>Elliptical & Bike Pedals:</strong> Inspect pedal
+                spindles and crank arms for play. If creaking occurs, apply a
+                light machine oil (e.g., 3-in-1) to bearing housings or pivot
+                points. For belt‐drive bikes, check belt tension every 100 hours
+                and follow the manufacturer’s belt‐tension guidelines.
+              </li>
+              <li>
+                <strong>Weight Machines & Cable Pulleys:</strong> Every 3–6
+                months, lubricate cable pulleys and guide rods with a dry
+                silicone spray to prevent buildup. Wipe off excess to avoid
+                attracting dust. Check that cables run smoothly without fraying;
+                replace any cable showing exposed strands immediately.
+              </li>
+            </ul>
+
+            <h2>3. Inspecting & Replacing Wear Parts</h2>
+            <p>
+              Even the best equipment undergoes wear and tear. Regular
+              inspections help you catch small issues before they become major
+              repairs.
+            </p>
+            <ul>
+              <li>
+                <strong>Cables & Belts:</strong> Look for fraying, kinks, or
+                cracking in treadmill belts and strength‐training cables.
+                Replace at first sign of wear—most manufacturers recommend
+                swapping cables every 6–12 months in heavy‐use scenarios.
+              </li>
+              <li>
+                <strong>Brake Pads & Brake Bands (Stationary Bikes):</strong> If
+                your resistance mechanism uses pads or bands, inspect for
+                glazing or thinning. Replace pads when braking performance drops
+                or you notice squeaking.
+              </li>
+              <li>
+                <strong>Rollers & Bearings:</strong> Listen for grinding or
+                rumbling when the treadmill deck or bike pedals move. These
+                noises often indicate worn rollers or bearings. Check axle play
+                by gently moving the roller side-to-side; if there’s noticeable
+                wobble, it’s time for a new roller assembly.
+              </li>
+              <li>
+                <strong>Upholstery & Grips:</strong> Foam grips and seat covers
+                degrade over time—replace grips when they become slippery or
+                cracked. If bench padding loses its firmness or cover tears,
+                swap in a new pad to maintain comfort and hygiene.
+              </li>
+            </ul>
+
+            <h2>4. Troubleshooting Common Issues</h2>
+            <p>
+              Even with diligent maintenance, equipment can develop occasional
+              hiccups. Here are quick fixes to the most frequent problems:
+            </p>
+            <ul>
+              <li>
+                <strong>Treadmill Won’t Power On:</strong> First, check that the
+                safety key is fully inserted. Ensure the power cord is securely
+                plugged into a surge protector. Reset the GFCI outlet if your
+                treadmill has one. If it still won’t start, inspect the circuit
+                breaker in your home and replace the fuse on the treadmill’s
+                power module if blown.
+              </li>
+              <li>
+                <strong>Squeaking or Creaking Noises:</strong> Identify whether
+                the noise comes from moving parts (belt deck, pedal crank, or
+                weight stack). Apply appropriate lubricant—silicone for plastic
+                components, light machine oil for metal joints—and tighten any
+                loose bolts or screws.
+              </li>
+              <li>
+                <strong>Display Console Malfunction:</strong> If buttons or
+                touchscreen responses become erratic, turn off and unplug the
+                machine for a few minutes to reset the electronics. Clean the
+                console with a soft, dry microfiber cloth. If the issue
+                persists, check for visible cable connections behind the console
+                housing and reseat any loose plugs.
+              </li>
+              <li>
+                <strong>Resistance Not Adjusting:</strong> On magnetic or
+                friction‐braked bikes/rowers, inspect the brake pad or magnet
+                height adjustment. Calibrate using the manufacturer’s
+                instructions. If your machine uses a friction pad, ensure it is
+                not glazed—lightly scuff it with fine sandpaper, then re‐align.
+              </li>
+            </ul>
+
+            <h2>5. Storage, Environment & Seasonal Care</h2>
+            <p>
+              Proper environmental conditions help your equipment last longer
+              and perform reliably.
+            </p>
+            <ul>
+              <li>
+                <strong>Humidity & Temperature:</strong> Aim to keep equipment
+                in a climate‐controlled space between 50–80°F and 30–50%
+                humidity. Excess moisture can corrode metal parts; arid
+                conditions may cause wooden components (e.g., rowing machine
+                handles) to crack. Use a dehumidifier in damp basements and a
+                fan in hot attics.
+              </li>
+              <li>
+                <strong>Covers & Mats:</strong> Place a rubber or foam mat under
+                each machine to protect floors and dampen vibrations. When not
+                in use for extended periods (e.g., off‐season), place a
+                breathable cover over treadmills and stationary bikes to block
+                dust.
+              </li>
+              <li>
+                <strong>Seasonal Inspections:</strong> If you temporarily
+                disassemble or store equipment (e.g., folding a treadmill),
+                inspect bolts and hardware before reassembly. Tighten all
+                connections and sanitize grip surfaces that may have sat unused
+                for months.
+              </li>
+            </ul>
+
+            <h2>Putting It All Together</h2>
+            <p>
+              Maintaining your fitness equipment is a simple investment of time
+              that pays off with years of safe, reliable performance. By
+              sticking to daily cleaning, periodic lubrication, regular
+              inspections, and troubleshooting issues as they arise, you’ll
+              prolong the life of your machines and enjoy smoother, quieter
+              workouts. Remember:
+            </p>
+            <ul>
+              <li>
+                <strong>Be Consistent:</strong> A quick wipe or safety check
+                after each session prevents bigger headaches later.
+              </li>
+              <li>
+                <strong>Use Manufacturer Guidelines:</strong> Always refer to
+                your equipment’s manual for specific maintenance intervals and
+                recommended lubricants.
+              </li>
+              <li>
+                <strong>Keep Spare Parts on Hand:</strong> Have extra belts,
+                cables, and fasteners so you can swap parts immediately when
+                wear appears.
+              </li>
+            </ul>
+            <p>
+              Follow these guidelines, and your treadmill, bike, free weights,
+              and all other fitness gear will stay in peak condition—helping you
+              achieve your goals without interruption.
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- About -->
+        <div class="footer-section footer-about">
+          <h3>About ProGear</h3>
+          <p>
+            ProGear delivers industrial-grade fitness equipment trusted by
+            professionals worldwide. From cardio machines to free weights, we
+            combine durability with cutting-edge innovation.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Social -->
+        <div class="footer-section footer-contact">
+          <h3>Contact Us</h3>
+          <p>123 Fitness Ave.<br />Skopje, North Macedonia</p>
+          <p>Email: support@progear.com<br />Phone: +389 2 123 456</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">© 2025 ProGear. All Rights Reserved.</div>
+    </footer>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

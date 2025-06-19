@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProGear</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            
+           <ul class="header-ul">
+            <div><h1 class="amblem">Pro<span>Gear</span></h1></div>
+                <li><a href="">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="shop"><a href="shop.html">Shop <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="shop-dropdown">
+                        <li><a class="dropdown-header" href="cardio.html">Cardio Machines</a>
+                        <ul>
+                            <li><a href="product.html?id=01">Treadmill X100</a></li>
+                            <li><a href="product.html?id=07">Elliptical Trainer E200</a></li>
+                            <li><a href="product.html?id=08">Rowing Machine R500</a></li>
+                        </ul>
+                        </li>
+                        <li><a class="dropdown-header" href="weights.html">Free Weights</a>
+                        <ul>
+                            <li><a href="product.html?id=03">Free Weight</a></li>
+                        </ul>
+                        </li>
+                        <li><a class="dropdown-header" href="strength.html">Strength Stations</a>
+                        <ul>
+                            <li><a href="product.html?id=02">FID7 Pro Adjustable Bench</a></li>
+                            <li><a href="product.html?id=09">Power Rack PR100</a></li>
+                            <li><a href="product.html?id=10">Cable Crossover CC300</a></li>
+                        </ul>
+                        </li>
+                        <li><a class="dropdown-header" href="functional.html">Cable & Functional Trainers</a>
+                        <ul>
+                            <li><a href="product.html?id=04">Resistance Band Set</a></li>
+                        </ul>
+                        </li>
+                        <li><a class="dropdown-header" href="intensity.html">High-Intensity & Plyo Gear</a>
+                        <ul>
+                            <li><a href="product.html?id=11">Plyo Box Set</a></li>
+                            <li><a href="product.html?id=12">Battle Ropes 50 ft</a></li>
+                        </ul>
+                        </li>
+                        <li><a class="dropdown-header" href="resistance.html">Resistance & Mobility</a>
+                        <ul>
+                            <li><a href="product.html?id=06">
+                              Exercise Ball</a></li>
+                            <li><a href="product.html?id=13">Foam Roller Pro</a></li>
+                            <li><a href="product.html?id=14">Yoga Block Pair</a></li>
+                        </ul>
+                        </li>
+                        <li><a class="dropdown-header" href="floors.html">Floors & Mats</a>
+                        <ul>
+                            <li><a href="product.html?id=05">Yoga Mat</a></li>
+
+                        </ul>
+                        </li>
+                        <li><a class="dropdown-header" href="accesories.html">Accessories & Wearables</a>
+                        <ul>
+                            <li><a href="product.html?id=15">Fitness Tracker Watch</a></li>
+                            <li><a href="product.html?id=16">Lifting Gloves</a></li>
+                        </ul>
+                        </li>
+                        <li><a class="dropdown-header" href="bundles.html">Bundles & Packages</a>
+                        <ul>
+                            <li><a href="product.html?id=17">Home Gym Starter Bundle</a></li>
+                            <li><a href="product.html?id=18">Cardio Duo Pack</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <span class="cart"
+            ><a href="cart.html"
+              ><i
+                class="fa-solid fa-cart-shopping"
+                style="color: orange; font-size: 30px"
+                ><p
+                  class="num-p"
+                  style="
+                    position: absolute;
+                    top: -12px;
+                    left: 18px;
+                    color: white;
+                    background-color: red;
+                    padding: 3px 5px;
+                    border-radius: 30px;
+                    font-size: 10px;
+                  "
+                >
+                  0
+                </p></i
+              ></a
+            ></span
+          >
+                <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            </button>           
+            </ul>
+            
+            
+
+            <!--mobile nav-->
+              <nav id="mobile-menu" class="mobile-menu">
+            <ul class="nav-list">
+                <li><a href="main.html">Home</a></li>
+            <li class="shop-m">
+            <a href="#!" class="shop-m-toggle">Shop <i style="color: orange;" class="fa fa-caret-down"></i></a>
+            <ul class="shop-dropdown-m">
+              <li class="shop-m">
+            <a href="shop.html" class="shop-m-toggle">All</a>
+            <ul class="shop-dropdown-m">
+                           
+            </ul>
+            </li>
+            <li class="shop-m">
+            <a href="cardio.html" class="shop-m-toggle">Cardio Machines</a>
+            <ul class="shop-dropdown-m">
+                           
+            </ul>
+            </li>
+            <li class="shop-m">
+            <a href="weights.html" class="shop-m-toggle">Free Weights</a>
+            <ul class="shop-dropdown-m">
+                            
+            </ul>
+            </li>
+            <li class="shop-m">
+            <a href="strength.html" class="shop-m-toggle">Strength Stations</a>
+            <ul class="shop-dropdown-m">
+                           
+            </ul>
+            </li>
+            <li class="shop-m">
+            <a href="functional.html" class="shop-m-toggle">Cable & Functional Trainers</a>
+            <ul class="shop-dropdown-m">
+                            
+            </ul>
+            </li>
+            <li class="shop-m">
+            <a href="intensity.html" class="shop-m-toggle">High-Intensity & Plyo Gear</a>
+            <ul class="shop-dropdown-m">
+
+                           
+            </ul>
+            </li>
+            <li class="shop-m">
+            <a href="resistance.html" class="shop-m-toggle">Resistance & Mobility</a>
+            <ul class="shop-dropdown-m">
+                           
+            </ul>
+            </li>
+            <li class="shop-m">
+            <a href="floors.html" class="shop-m-toggle">Floors & Mats</a>
+            <ul class="shop-dropdown-m">
+           
+                           
+            </ul>
+            </li>
+            <li class="shop-m">
+            <a href="accesories.html" class="shop-m-toggle">Accessories & Wearables</a>
+            <ul class="shop-dropdown-m">
+           
+                           
+            </ul>
+            </li>
+            <li class="shop-m">
+            <a href="bundles.html" class="shop-m-toggle">Bundles & Packages</a>
+            <ul class="shop-dropdown-m">
+
+                           
+            </ul>
+            </li>
+            </ul>
+            </li>
+
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            </nav>
+         </div>   
+    </header>
+    
+        <div class="head-text">
+        <div id="video" class="video-div">
+            <video style="background: rgba(0, 0, 0, 0.699);" controls autoplay loop class="video" src="video/mixkit-man-doing-push-ups-using-dumbbells-40248-hd-ready.mp4"></video>
+        </div>
+        <div class="head-texts">
+        <h1 class="head-h1">ELEVATE YOUR FITNESS. <br>BUY <span style="color: orange;">TOP QUALITY <br>EQUIPMENT.</span></h1>
+        <button class="head-shop-btn"><a href="shop.html">Shop Now <i class="fa-solid fa-arrow-right"></i></a></button>
+        </div>
+        </div>
+
+        
+<div class="carts-container">
+  <div class="cart-items">
+    <div class="feature-card">
+      <i class="fa-regular fa-hand-point-up"></i>
+      <h2>Why Choose Us</h2>
+      <p>Choose ProGear for industrial-grade durability, cutting-edge innovation, expert support, free shipping, and an unbeatable warranty—everything you need to train with confidence and crush your goals.</p>
+    </div>
+    <div class="feature-card">
+      <i class="fa-solid fa-medal"></i>
+      <h2>Warranty</h2>
+      <p>Our comprehensive warranty covers all ProGear equipment so you can train worry-free and focus entirely on achieving your fitness goals.</p>
+    </div>
+    <div class="feature-card">
+      <i class="fa-solid fa-list-check"></i>
+      <h2>Mission</h2>
+      <p>Our mission is to empower every fitness enthusiast with innovative, ultra-durable equipment and unwavering support so they can achieve their strongest, healthiest selves.</p>
+    </div>
+  </div>
+</div>
+
+        <div class="scrollmenu-container">
+            <h1 style="font-size: 50px; text-align: center;">SEARCH BY <span style="color: orange;">CATEGORY</span></h1>
+        <div class="scrollmenu">
+            <a href="cardio.html">
+                <img src="images/cardio.png" alt="">
+                <h1>Cardio Machines</h1>
+            </a>
+            <a href="weights.html">
+                <img src="images/free-weights.png" alt="">
+                <h1>Free Weights</h1>
+            </a>
+            <a href="strength.html">
+                <img src="images/Centr-FID7-Hero-1-1200x1200-1.webp" alt="">
+                <h1>Strength Stations</h1>
+            </a>
+            <a href="functional.html">
+                <img src="images/resistance_gear.png" alt="">
+                <h1>Cable & Functional Trainers</h1>
+            </a>
+            <a href="intensity.html">
+                <img src="images/battle_ropes.jpg" alt="">
+                <h1>High-Intensity & Plyo Gear</h1>
+            </a>
+            <a href="resistance.html">
+                <img src="images/foamm.webp" alt="">
+                <h1>Resistance & Mobility</h1>
+            </a>
+            <a href="floors.html">
+                <img src="images/fitnessmat.webp" alt="">
+                <h1>Floors & Mats</h1>
+            </a> 
+            <a href="accesories.html">
+                <img src="images/watch.jpg" alt="">
+                <h1>Accessories & Wearables</h1>
+            </a>
+            <a href="bundles.html">
+                <img src="images/fitness_bundle.webp" alt="">
+                <h1>Bundles & Packages</h1>
+            </a>
+        
+    </div>
+</div>
+
+<section class="pg-block"> 
+  <div class="pg-block__img">
+    <img src="images/imgg01.webp" alt="Adjustable Bench">
+  </div>
+  <div class="pg-block__copy">
+    <h2>INSPIRE SERIES FID7 PRO ADJUSTABLE BENCH</h2>
+    <p>
+      Meet the only weight bench you’ll ever need. Unlock unparalleled versatility with the Inspire Series FID7 PRO Adjustable Bench by Centr.
+    </p>
+    <a href="product.html?id=02" class="pg-cta">SHOP NOW</a>
+  </div>
+</section>
+
+
+<section class="pg-block pg-block--reverse">
+  <div class="pg-block__img">
+    <img src="images/T7s_1500x1500_01.webp" alt="Inspire Series T7S Treadmill">
+  </div>
+  <div class="pg-block__copy">
+    <h2>INSPIRE SERIES T7S TREADMILL</h2>
+    <p>
+      Experience peak performance—and peak entertainment—with the Inspire Series T7S Treadmill. Oversized 15.6″ LED touchscreen, 25 built-in programs, and seamless smartphone mirroring.
+    </p>
+    <a href="product.html?id=01" class="pg-cta">SHOP NOW</a>
+  </div>
+</section>
+
+<section class="blog-section">
+  <h2 class="blog-title" style="font-size: 50px;">Pro<span style="color: orange;">Gear</span> BLOG</h2>
+  <div class="blog-container">
+    <!-- Post 1 -->
+    <article class="blog-post">
+      <img src="images/blog/blog1.jpeg" alt="Strength Training Tips" class="blog-post-img">
+      <div class="blog-post-content">
+        <p class="blog-post-date">May 12, 2025</p>
+        <h3 class="blog-post-title">5 Strength Training Tips for Beginners</h3>
+        <p class="blog-post-excerpt">
+          Discover the essential techniques and exercises to build a solid foundation in strength training and avoid common mistakes.
+        </p>
+        <a href="blog/blog1.html" class="blog-post-link">
+          Read More <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </article>
+
+    <!-- Post 2 -->
+    <article class="blog-post">
+      <img src="images/blog/blog2.jpeg" alt="Maximize Cardio Workouts" class="blog-post-img">
+      <div class="blog-post-content">
+        <p class="blog-post-date">May 8, 2025</p>
+        <h3 class="blog-post-title">How to Maximize Your Cardio Workouts</h3>
+        <p class="blog-post-excerpt">
+          Learn how to structure your treadmill and bike sessions for fat burn, endurance, and heart health, plus recovery strategies.
+        </p>
+        <a href="blog/blog2.html" class="blog-post-link">
+          Read More <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </article>
+
+    <!-- Post 3 -->
+    <article class="blog-post">
+      <img src="images/blog/blog3.jpeg" alt="Home Gym Essentials" class="blog-post-img">
+      <div class="blog-post-content">
+        <p class="blog-post-date">May 2, 2025</p>
+        <h3 class="blog-post-title">Top 10 Home Gym Essentials</h3>
+        <p class="blog-post-excerpt">
+          From benches to bands, find out the must-have equipment to build a versatile home gym without breaking the bank.
+        </p>
+        <a href="blog/blog3.html" class="blog-post-link">
+          Read More <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </article>
+
+     <article class="blog-post">
+  <img src="images/blog/blog4.jpeg" alt="Nutrition Strategies for Muscle Growth" class="blog-post-img">
+  <div class="blog-post-content">
+    <p class="blog-post-date">April 28, 2025</p>
+    <h3 class="blog-post-title">Top Nutrition Strategies for Muscle Growth</h3>
+    <p class="blog-post-excerpt">
+      Learn which macronutrients to prioritize, meal timing tactics, and supplement tips to maximize your gains.
+    </p>
+    <a href="blog/blog4.html" class="blog-post-link">
+      Read More <i class="fa-solid fa-arrow-right"></i>
+    </a>
+  </div>
+</article>
+
+<article class="blog-post">
+  <img src="images/blog/blog5.jpeg" alt="Choosing the Right Home Gym Equipment" class="blog-post-img">
+  <div class="blog-post-content">
+    <p class="blog-post-date">April 15, 2025</p>
+    <h3 class="blog-post-title">How to Choose the Right Home Gym Equipment</h3>
+    <p class="blog-post-excerpt">
+      From budget constraints to space planning, discover the key considerations before you invest in your setup.
+    </p>
+    <a href="blog/blog5.html" class="blog-post-link">
+      Read More <i class="fa-solid fa-arrow-right"></i>
+    </a>
+  </div>
+</article>
+    
+  </div>
+
+</section>
+<a href="blog.html" style="display: flex; justify-content: center; font-weight: bold; text-decoration: none;  color: black; font-size: 20px;">Visit Pro<span style="color: orange;">Gear </span> Blog Page >></a>
+
+ 
+<div class="accordion-container">
+    <h1 style="text-align: center; font-size: 50px;">WHY CHOOSE Pro<span style="color: orange;">Gear</span> ?</h1>
+    <div class="inner-accordion">
+<button class="accordion">Enjoy Fast, Free Curbside Delivery in 3–5 Business Days. <i class="fa-solid fa-caret-down"></i></button>
+<div class="panel">
+     <p>We ship your order at no extra cost—right to your door—and offer premium installation services where available.<a href=""> See more > </a></p>
+</div>
+<button class="accordion">Split Your Purchase into 6-12 Months of 0% APR Financing with Instant Approval. <i class="fa-solid fa-caret-down"></i></button>
+<div class="panel">
+    <p>Flexible payment plans let you get the gear you need today, without hidden fees or surprises. <a href=""> See more > </a></p>
+</div>
+<button class="accordion">Top Quality remanufactured equipment. <i class="fa-solid fa-caret-down"></i></button>
+<div class="panel">
+    <p>At Fitness Superstore, quality is our top priority. Our equipment undergoes a rigorous inspection, testing, and quality assurance process to ensure that every machine meets our high standards. <a href=""> See more > </a></p>
+</div>
+<button class="accordion">Bring Gym-Grade Durability Home with Commercial-Standard Components. <i class="fa-solid fa-caret-down"></i></button>
+<div class="panel">
+    <p>All ProGear machines use the same heavy-duty steel frames and bearings you’d find in professional fitness centers. <a href=""> See more > </a></p>
+</div>
+<button class="accordion">Protect Your Investment with Complimentary Annual Inspections and Tune-Ups <i class="fa-solid fa-caret-down"></i></button>
+<div class="panel">
+    <p>We’ll send a certified technician to your home once a year to ensure your equipment stays in peak condition—at no extra cost. <a href=""> See more > </a></p>
+</div>
+</div>
+</div>
+
+</div>
+
+<!-- Newsletter Section -->
+<section class="newsletter-section">
+  <div class="newsletter-content">
+    <h2 class="newsletter-title" >Stay Updated with Pro<span style="color: orange;">Gear</span></h2>
+    <p class="newsletter-text">
+      Subscribe to our newsletter for exclusive offers, workout tips, and the latest gear drops delivered straight to your inbox!
+    </p>
+    <form class="newsletter-form">
+      <input
+        type="email"
+        class="newsletter-input"
+        placeholder="Enter your email address"
+        required
+      />
+      <button type="submit" class="newsletter-button">
+        Subscribe
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- About -->
+    <div class="footer-section footer-about">
+      <h3>About ProGear</h3>
+      <p>
+        ProGear delivers industrial-grade fitness equipment trusted by professionals worldwide. 
+        From cardio machines to free weights, we combine durability with cutting-edge innovation.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="main.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact & Social -->
+    <div class="footer-section footer-contact">
+      <h3>Contact Us</h3>
+      <p>123 Fitness Ave.<br/>Skopje, North Macedonia</p>
+      <p>Email: support@progear.com<br/>Phone: +389 2 123 456</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 ProGear. All Rights Reserved.
+  </div>
+</footer>
+
+
+
+    <script type="module" src="js/main.js"></script> 
+</body>
+</html>

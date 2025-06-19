@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <ul class="header-ul">
+          <div>
+            <h1 class="amblem">Pro<span>Gear</span></h1>
+          </div>
+          <li><a href="../main.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li class="shop">
+            <a href="../shop.html"
+              >Shop <i class="fa-solid fa-caret-down"></i
+            ></a>
+            <ul class="shop-dropdown">
+              <li>
+                <a class="dropdown-header" href="../cardio.html"
+                  >Cardio Machines</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=01">Treadmill X100</a></li>
+                  <li>
+                    <a href="../product.html?id=07">Elliptical Trainer E200</a>
+                  </li>
+                  <li>
+                    <a href="../product.html?id=08">Rowing Machine R500</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../weights.html"
+                  >Free Weights</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=03">Free Weight</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../strength.html"
+                  >Strength Stations</a
+                >
+                <ul>
+                  <li>
+                    <a href="../product.html?id=02"
+                      >FID7 Pro Adjustable Bench</a
+                    >
+                  </li>
+                  <li><a href="../product.html?id=09">Power Rack PR100</a></li>
+                  <li>
+                    <a href="../product.html?id=10">Cable Crossover CC300</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../functional.html"
+                  >Cable & Functional Trainers</a
+                >
+                <ul>
+                  <li>
+                    <a href="../product.html?id=04">Resistance Band Set</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../intensity.html"
+                  >High-Intensity & Plyo Gear</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=11">Plyo Box Set</a></li>
+                  <li>
+                    <a href="../product.html?id=12">Battle Ropes 50 ft</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../resistance.html"
+                  >Resistance & Mobility</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=06"> Exercise Ball</a></li>
+                  <li><a href="../product.html?id=13">Foam Roller Pro</a></li>
+                  <li><a href="../product.html?id=14">Yoga Block Pair</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../floors.html"
+                  >Floors & Mats</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=05">Yoga Mat</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../accesories.html"
+                  >Accessories & Wearables</a
+                >
+                <ul>
+                  <li>
+                    <a href="../product.html?id=15">Fitness Tracker Watch</a>
+                  </li>
+                  <li><a href="../product.html?id=16">Lifting Gloves</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../bundles.html"
+                  >Bundles & Packages</a
+                >
+                <ul>
+                  <li>
+                    <a href="../product.html?id=17">Home Gym Starter Bundle</a>
+                  </li>
+                  <li><a href="../product.html?id=18">Cardio Duo Pack</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <span class="cart"
+            ><a href="../cart.html"
+              ><i
+                class="fa-solid fa-cart-shopping"
+                style="color: orange; font-size: 30px"
+                ><p
+                  class="num-p"
+                  style="
+                    position: absolute;
+                    top: -12px;
+                    left: 18px;
+                    color: white;
+                    background-color: red;
+                    padding: 3px 5px;
+                    border-radius: 30px;
+                    font-size: 10px;
+                  "
+                >
+                  0
+                </p></i
+              ></a
+            ></span
+          >
+          <button
+            id="mobile-menu-toggle"
+            class="mobile-menu-toggle"
+            aria-label="Toggle navigation"
+          >
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </ul>
+
+        <!--mobile nav-->
+        <nav id="mobile-menu" class="mobile-menu">
+          <ul class="nav-list">
+            <li><a href="../main.html">Home</a></li>
+            <li class="shop-m">
+              <a href="#!" class="shop-m-toggle"
+                >Shop <i style="color: orange" class="fa fa-caret-down"></i
+              ></a>
+              <ul class="shop-dropdown-m">
+                <li class="shop-m">
+                  <a href="../shop.html" class="shop-m-toggle">All</a>
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../cardio.html" class="shop-m-toggle"
+                    >Cardio Machines</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../weights.html" class="shop-m-toggle"
+                    >Free Weights</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../strength.html" class="shop-m-toggle"
+                    >Strength Stations</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../functional.html" class="shop-m-toggle"
+                    >Cable & Functional Trainers</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../intensity.html" class="shop-m-toggle"
+                    >High-Intensity & Plyo Gear</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../resistance.html" class="shop-m-toggle"
+                    >Resistance & Mobility</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../floors.html" class="shop-m-toggle"
+                    >Floors & Mats</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../accesories.html" class="shop-m-toggle"
+                    >Accessories & Wearables</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../bundles.html" class="shop-m-toggle"
+                    >Bundles & Packages</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Blog Section -->
+    <a href="../blog.html" class="custom-back-link">← Back to Blog</a>
+    <section class="custom-blog-wrapper">
+      <article class="custom-post-full">
+        <img
+          src="../images/blog/blog7.jpeg"
+          alt="Optimizing Your Warm-Up Routine"
+          class="custom-post-full-img"
+        />
+        <div class="custom-post-full-content">
+          <p class="custom-post-full-date">March 20, 2025</p>
+          <h1 class="custom-post-full-title">
+            Optimizing Your Warm-Up Routine for Better Performance
+          </h1>
+          <div class="custom-post-full-body">
+            <p>
+              A well-structured warm-up is more than just a few minutes of
+              stretching; it’s the bridge between rest and peak performance.
+              Properly preparing your muscles, joints, and nervous system
+              reduces injury risk, enhances mobility, and primes your body to
+              lift heavier, run faster, or jump higher. In this guide, we’ll
+              cover the why and how—dynamic stretches, activation drills, and
+              progressive movement patterns—that ensure you’re physically and
+              mentally ready for whatever workout lies ahead.
+            </p>
+
+            <h2>1. Understand the Purpose of a Warm-Up</h2>
+            <p>The warm-up has three primary goals:</p>
+            <ul>
+              <li>
+                <strong>Increase Core Temperature:</strong> Raising muscle
+                temperature improves elasticity and force production. A 1-2°C
+                increase in muscle temperature can enhance strength outputs by
+                up to 5–10%.
+              </li>
+              <li>
+                <strong>Enhance Blood Flow & Oxygen Delivery:</strong> Gradually
+                elevating heart rate increases blood flow to working muscles,
+                delivering oxygen and nutrients more efficiently.
+              </li>
+              <li>
+                <strong>Activate the Nervous System:</strong> Performing
+                movement-specific drills “wakes up” neural pathways, improving
+                motor unit recruitment and coordination for safer, more powerful
+                reps.
+              </li>
+            </ul>
+            <p>
+              Skip a proper warm-up and you risk pulling a muscle, missing depth
+              under the bar, or simply feeling “stuck” when trying to generate
+              force. By investing 10–15 minutes in purposeful preparation, you
+              set the stage for a safer, more effective workout.
+            </p>
+
+            <h2>2. Structure a Progressive Warm-Up</h2>
+            <p>
+              Your warm-up should flow in three phases, each lasting roughly 3–5
+              minutes (adjust based on individual needs and workout intensity).
+            </p>
+            <ol>
+              <li>
+                <strong>Phase 1: General Cardio & Mobility</strong>
+                <p>
+                  Start with low-intensity, whole-body movements to gradually
+                  raise heart rate to ~50–60% of max. Options include:
+                </p>
+                <ul>
+                  <li>Jogging or brisk walking (treadmill or outdoors)</li>
+                  <li>Stationary bike or rower at easy pace</li>
+                  <li>Jump rope at moderate tempo</li>
+                </ul>
+                <p>
+                  Simultaneously, incorporate basic mobility drills (leg swings,
+                  arm circles, hip rotations) to lubricate joints and improve
+                  range of motion.
+                </p>
+              </li>
+
+              <li>
+                <strong>Phase 2: Dynamic Stretching & Activation</strong>
+                <p>
+                  Transition into dynamic movements that take joints through
+                  full ranges, while activating key muscle groups. Examples:
+                </p>
+                <ul>
+                  <li>
+                    <strong>World’s Greatest Stretch:</strong> From a lunge
+                    position, rotate your torso toward the front leg, reaching
+                    the opposite arm overhead. This mobilizes hip flexors,
+                    thoracic spine, and shoulders.
+                  </li>
+                  <li>
+                    <strong>Leg Swings (Front-to-Back & Side-to-Side):</strong>
+                    Stand beside a wall; swing one leg forward/backward for 10
+                    reps, then side-to-side for 10 reps. Repeat on the other
+                    leg. This opens hips and hamstrings dynamically.
+                  </li>
+                  <li>
+                    <strong>Arm Circles & Shoulder Pass-Throughs:</strong> Use a
+                    PVC pipe or band to circle arms forward/backward (10 reps
+                    each). Then hold the band overhead with an overhand grip and
+                    lower behind your back, keeping arms straight—10 reps total.
+                  </li>
+                  <li>
+                    <strong>Glute Bridges & Clamshells:</strong> Lie on your
+                    back, knees bent: press hips up for 10 glute bridges. Then,
+                    lie on one side, knees bent at 90°: lift the top knee for 12
+                    clamshell reps. These drills activate glutes and external
+                    rotators.
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>Phase 3: Movement-Specific Drills & Light Sets</strong>
+                <p>
+                  Finally, transition into exercises that closely mimic your
+                  planned workout—either by movement pattern or load. For
+                  example:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Squat Day:</strong> Perform bodyweight squats (10
+                    reps), then goblet squats (8 reps with a light kettlebell),
+                    and a single light barbell back squat set (5 reps at 50%
+                    working weight).
+                  </li>
+                  <li>
+                    <strong>Upper-Body Push:</strong> Do 10 push-ups or incline
+                    push-ups, followed by 8 banded push-ups, then 5 bench
+                    presses at ~50% of your working weight.
+                  </li>
+                  <li>
+                    <strong>Run or Sprint Workout:</strong> Include 2–3 strides
+                    (60–80 meters at ~60% effort), followed by 2×30 meter
+                    buildups (gradually accelerating). This primes fast-twitch
+                    fibers without inducing fatigue.
+                  </li>
+                  <li>
+                    <strong>Olympic Lifts:</strong> Work up through empty bar
+                    snatches or cleans (3–5 reps), then add incremental weight
+                    (for 2–3 reps) until you approach working sets—carefully
+                    focusing on technique.
+                  </li>
+                </ul>
+                <p>
+                  The goal is to use light loads and low reps to reinforce motor
+                  patterns, gradually acclimate to heavier weights, and confirm
+                  proper form before tackling top sets.
+                </p>
+              </li>
+            </ol>
+
+            <h2>3. Sample Warm-Up Routines by Workout Type</h2>
+            <p>
+              Below are two concise examples you can adapt based on your
+              schedule and goals. Aim for 10–15 total minutes:
+            </p>
+
+            <h3>a. Full-Body Strength Session Warm-Up (10–12 minutes)</h3>
+            <ul>
+              <li>
+                <strong>2–3 minutes:</strong> Light jog or stationary bike (easy
+                pace)
+              </li>
+              <li>
+                <strong>1 minute:</strong> Leg swings (10 each leg
+                front-to-back, 10 each leg side-to-side)
+              </li>
+              <li>
+                <strong>1 minute:</strong> Arm circles (10 forward, 10 backward)
+                + banded PVC pass-throughs (10 reps)
+              </li>
+              <li>
+                <strong>1 minute:</strong> World’s Greatest Stretch (5 reps per
+                side)
+              </li>
+              <li>
+                <strong>1 minute:</strong> Glute bridges (10 reps) + clamshells
+                (10 per side)
+              </li>
+              <li>
+                <strong>2 minutes:</strong> Bodyweight squats (10 reps) → Goblet
+                squats (8 reps, light kettlebell)
+              </li>
+              <li>
+                <strong>2 minutes:</strong> Push-ups (10 reps) → Band-resisted
+                push-ups (8 reps)
+              </li>
+              <li>
+                <strong>2 minutes:</strong> Empty-bar back squat (5 reps) →
+                Empty-bar bench press (5 reps)
+              </li>
+            </ul>
+
+            <h3>b. Run/Sprint-Focused Warm-Up (10–15 minutes)</h3>
+            <ul>
+              <li>
+                <strong>3 minutes:</strong> Jogging or easy cycling to raise
+                heart rate
+              </li>
+              <li>
+                <strong>1 minute:</strong> Hip openers (10 leg circles per side)
+              </li>
+              <li>
+                <strong>1 minute:</strong> Walking lunges with torso twist (5
+                per side)
+              </li>
+              <li>
+                <strong>1 minute:</strong> High knees (30 seconds) + butt kicks
+                (30 seconds)
+              </li>
+              <li>
+                <strong>1 minute:</strong> World’s Greatest Stretch (5 reps per
+                side)
+              </li>
+              <li>
+                <strong>2–3 minutes:</strong> Strides (60m at 60–70% effort × 2
+                reps, walking back recovery)
+              </li>
+              <li>
+                <strong>2 minutes:</strong> 2×30m buildups (start at 50% effort,
+                accelerate to 80% by 30m, walk back)
+              </li>
+            </ul>
+
+            <h2>4. Common Mistakes to Avoid</h2>
+            <ul>
+              <li>
+                <strong>Static Stretching Too Early:</strong> Holding deep
+                stretches before muscle temperature is up can temporarily reduce
+                force output. Reserve static stretches for post-workout
+                cooldown.
+              </li>
+              <li>
+                <strong>Rushing Through Phases:</strong> Skipping mobilization
+                or dynamic drills often leads to tight, under-activated muscles.
+                Take the time to flow progressively.
+              </li>
+              <li>
+                <strong>Using Heavy Loads Too Soon:</strong> Performing
+                near-maximal sets without properly ramping up places undue
+                stress on connective tissues. Always work up in small
+                increments.
+              </li>
+              <li>
+                <strong>Ignoring Pain or Discomfort:</strong> If a dynamic drill
+                or activation movement causes sharp pain, modify or skip it.
+                Discomfort is normal, pain is not.
+              </li>
+            </ul>
+
+            <h2>Putting It All Together</h2>
+            <p>
+              An optimized warm-up primes you physically and mentally for
+              success. By following a structured sequence—general cardio,
+              dynamic mobility, muscle activation, and movement-specific
+              ramp-ups—you’ll enhance performance, reduce injury risk, and walk
+              into every workout feeling confident. Experiment with the sample
+              routines above, adjust volume and intensity to your fitness level,
+              and make the warm-up a non-negotiable part of your training day.
+              Your future self (and your PRs) will thank you!
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- About -->
+        <div class="footer-section footer-about">
+          <h3>About ProGear</h3>
+          <p>
+            ProGear delivers industrial-grade fitness equipment trusted by
+            professionals worldwide. From cardio machines to free weights, we
+            combine durability with cutting-edge innovation.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Social -->
+        <div class="footer-section footer-contact">
+          <h3>Contact Us</h3>
+          <p>123 Fitness Ave.<br />Skopje, North Macedonia</p>
+          <p>Email: support@progear.com<br />Phone: +389 2 123 456</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">© 2025 ProGear. All Rights Reserved.</div>
+    </footer>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

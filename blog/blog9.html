@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <ul class="header-ul">
+          <div>
+            <h1 class="amblem">Pro<span>Gear</span></h1>
+          </div>
+          <li><a href="../main.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li class="shop">
+            <a href="../shop.html"
+              >Shop <i class="fa-solid fa-caret-down"></i
+            ></a>
+            <ul class="shop-dropdown">
+              <li>
+                <a class="dropdown-header" href="../cardio.html"
+                  >Cardio Machines</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=01">Treadmill X100</a></li>
+                  <li>
+                    <a href="../product.html?id=07">Elliptical Trainer E200</a>
+                  </li>
+                  <li>
+                    <a href="../product.html?id=08">Rowing Machine R500</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../weights.html"
+                  >Free Weights</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=03">Free Weight</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../strength.html"
+                  >Strength Stations</a
+                >
+                <ul>
+                  <li>
+                    <a href="../product.html?id=02"
+                      >FID7 Pro Adjustable Bench</a
+                    >
+                  </li>
+                  <li><a href="../product.html?id=09">Power Rack PR100</a></li>
+                  <li>
+                    <a href="../product.html?id=10">Cable Crossover CC300</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../functional.html"
+                  >Cable & Functional Trainers</a
+                >
+                <ul>
+                  <li>
+                    <a href="../product.html?id=04">Resistance Band Set</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../intensity.html"
+                  >High-Intensity & Plyo Gear</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=11">Plyo Box Set</a></li>
+                  <li>
+                    <a href="../product.html?id=12">Battle Ropes 50 ft</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../resistance.html"
+                  >Resistance & Mobility</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=06"> Exercise Ball</a></li>
+                  <li><a href="../product.html?id=13">Foam Roller Pro</a></li>
+                  <li><a href="../product.html?id=14">Yoga Block Pair</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../floors.html"
+                  >Floors & Mats</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=05">Yoga Mat</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../accesories.html"
+                  >Accessories & Wearables</a
+                >
+                <ul>
+                  <li>
+                    <a href="../product.html?id=15">Fitness Tracker Watch</a>
+                  </li>
+                  <li><a href="../product.html?id=16">Lifting Gloves</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../bundles.html"
+                  >Bundles & Packages</a
+                >
+                <ul>
+                  <li>
+                    <a href="../product.html?id=17">Home Gym Starter Bundle</a>
+                  </li>
+                  <li><a href="../product.html?id=18">Cardio Duo Pack</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <span class="cart"
+            ><a href="../cart.html"
+              ><i
+                class="fa-solid fa-cart-shopping"
+                style="color: orange; font-size: 30px"
+                ><p
+                  class="num-p"
+                  style="
+                    position: absolute;
+                    top: -12px;
+                    left: 18px;
+                    color: white;
+                    background-color: red;
+                    padding: 3px 5px;
+                    border-radius: 30px;
+                    font-size: 10px;
+                  "
+                >
+                  0
+                </p></i
+              ></a
+            ></span
+          >
+          <button
+            id="mobile-menu-toggle"
+            class="mobile-menu-toggle"
+            aria-label="Toggle navigation"
+          >
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </ul>
+
+        <!--mobile nav-->
+        <nav id="mobile-menu" class="mobile-menu">
+          <ul class="nav-list">
+            <li><a href="../main.html">Home</a></li>
+            <li class="shop-m">
+              <a href="#!" class="shop-m-toggle"
+                >Shop <i style="color: orange" class="fa fa-caret-down"></i
+              ></a>
+              <ul class="shop-dropdown-m">
+                <li class="shop-m">
+                  <a href="../shop.html" class="shop-m-toggle">All</a>
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../cardio.html" class="shop-m-toggle"
+                    >Cardio Machines</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../weights.html" class="shop-m-toggle"
+                    >Free Weights</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../strength.html" class="shop-m-toggle"
+                    >Strength Stations</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../functional.html" class="shop-m-toggle"
+                    >Cable & Functional Trainers</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../intensity.html" class="shop-m-toggle"
+                    >High-Intensity & Plyo Gear</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../resistance.html" class="shop-m-toggle"
+                    >Resistance & Mobility</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../floors.html" class="shop-m-toggle"
+                    >Floors & Mats</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../accesories.html" class="shop-m-toggle"
+                    >Accessories & Wearables</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../bundles.html" class="shop-m-toggle"
+                    >Bundles & Packages</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Blog Section -->
+     <a href="../blog.html" class="custom-back-link">← Back to Blog</a>
+     <section class="custom-blog-wrapper">
+    <article class="custom-post-full">
+    <img
+      src="../images/blog/blog9.jpeg"
+      alt="Designing Your Perfect Home Gym Layout"
+      class="custom-post-full-img"
+    />
+    <div class="custom-post-full-content">
+      <p class="custom-post-full-date">February 18, 2025</p>
+      <h1 class="custom-post-full-title">Designing Your Perfect Home Gym Layout</h1>
+      <div class="custom-post-full-body">
+        <p>
+          Creating an efficient, safe, and inspiring home gym layout goes far beyond
+          simply placing equipment in a room. Whether you have a spare bedroom, garage,
+          or a corner in your living room, thoughtful planning ensures you maximize
+          every square inch. In this guide, we’ll walk through key considerations—from
+          measuring your space and choosing the right flooring to arranging zones for
+          flow and safety. By the end, you’ll have a clear roadmap to design a home
+          gym that feels professional, keeps you motivated, and fits your budget.
+        </p>
+
+        <h2>1. Measure Your Space Precisely</h2>
+        <p>
+          Before purchasing any equipment, start with accurate measurements:
+        </p>
+        <ul>
+          <li>
+            <strong>Floor Dimensions:</strong> Measure length and width in feet (or meters),
+            then calculate total square footage. For small spaces, consider foldable
+            or stackable equipment.
+          </li>
+          <li>
+            <strong>Ceiling Height:</strong> Confirm you have at least 8 feet of clearance.
+            For overhead lifts (e.g., pull-ups, Olympic lifts), you’ll need 9–10 feet.
+          </li>
+          <li>
+            <strong>Obstructions:</strong> Note doors, windows, radiators, vents, and light
+            fixtures. Draw a simple floorplan on graph paper or use a free online room planner.
+          </li>
+          <li>
+            <strong>Traffic Flow:</strong> Sketch walkways 2–3 feet wide around equipment
+            to allow easy access and safe movement, especially if you plan to train alone.
+          </li>
+        </ul>
+
+        <h2>2. Select the Right Flooring</h2>
+        <p>
+          Flooring protects both your home and your body. Key options include:
+        </p>
+        <ul>
+          <li>
+            <strong>Rubber Interlocking Tiles:</strong> ¾-inch thick tiles absorb impact,
+            reduce noise, and protect subfloors. They’re easy to install and replace.
+          </li>
+          <li>
+            <strong>Roll-Out Rubber Mats:</strong> Available in 6 ft × 4 ft or larger rolls.
+            Ideal for free-weight areas and deadlift zones. Look for ½–¾-inch thickness.
+          </li>
+          <li>
+            <strong>Foam Puzzle Mats:</strong> Lightweight and budget-friendly, but
+            less durable under heavy barbells. Better suited for yoga, stretching, or
+            bodyweight circuits.
+          </li>
+          <li>
+            <strong>Treadmill/Equipment Mats:</strong> Placed under cardio machines to
+            reduce vibration and protect flooring. Choose mat dimensions that match
+            your treadmill or bike’s footprint.
+          </li>
+        </ul>
+        <p>
+          Whichever you choose, ensure the surface is level, slip-resistant, and easy
+          to clean. Thick rubber also reduces joint stress when jumping or dropping
+          weights.
+        </p>
+
+        <h2>3. Define Training Zones</h2>
+        <p>
+          Dividing your gym into functional zones creates a logical flow:
+        </p>
+        <ul>
+          <li>
+            <strong>Warm-Up & Mobility Area:</strong> Allocate 4×4 feet for a yoga mat,
+            foam roller, or dynamic stretching. Place near a wall or mirror for form checks.
+          </li>
+          <li>
+            <strong>Strength Training Zone:</strong> Choose a 6×6 to 8×8 ft footprint for
+            a power rack, bench, and free weights. Ensure ceiling height allows for full
+            barbell extension. Leave 2–3 feet behind the rack for safety pins or spotter access.
+          </li>
+          <li>
+            <strong>Free-Weight/Open Space:</strong> Dedicate at least 5×5 feet for dumbbell
+            exercises, kettlebell swings, and bodyweight movements. Keep this area clear of
+            clutter and offcuts.
+          </li>
+          <li>
+            <strong>Cardio Corner:</strong> Place treadmill, stationary bike, or rower
+            against a wall. Allow 2 feet of clearance on each side and 6 feet in front
+            for safe usage. Consider placing a TV or tablet mount in front for workouts.
+          </li>
+          <li>
+            <strong>Storage & Organization:</strong> Wall-mounted racks for dumbbells,
+            hooks for resistance bands, and shelves for small accessories keep the floor
+            tidy. Position storage near the strength zone for quick transitions.
+          </li>
+        </ul>
+        <p>
+          A well-planned layout prevents tripping hazards and ensures each workout area
+          serves its purpose without overlap.
+        </p>
+
+        <h2>4. Optimize Lighting & Ventilation</h2>
+        <p>
+          Good lighting and airflow make workouts more pleasant and reduce fatigue:
+        </p>
+        <ul>
+          <li>
+            <strong>Natural Light:</strong> If possible, position cardio equipment near a
+            window or place mirrors to reflect outdoor light into darker corners.
+          </li>
+          <li>
+            <strong>Overhead & Task Lighting:</strong> Use bright LED fixtures (5000K)
+            to mimic daylight. Install a directional lamp over the strength zone to
+            see barbell markings clearly.
+          </li>
+          <li>
+            <strong>Ventilation:</strong> A ceiling fan or portable fan prevents overheating.
+            If your gym is in a basement or windowless space, consider a small window fan
+            or a ductless air conditioner to improve air exchange.
+          </li>
+        </ul>
+        <p>
+          Proper lighting and ventilation not only enhance safety but also boost energy
+          and motivation during longer sessions.
+        </p>
+
+        <h2>5. Arrange Equipment for Flow & Safety</h2>
+        <p>
+          Equipment placement should follow a logical sequence:
+        </p>
+        <ul>
+          <li>
+            <strong>Entryway Clearance:</strong> Keep 2–3 feet clear near the door so you
+            can enter with weights or mats. Avoid placing heavy objects directly behind
+            the door swing.
+          </li>
+          <li>
+            <strong>Strength to Cardio Transition:</strong> Position your strength rack
+            adjacent to dumbbells and kettlebells. Place cardio machines slightly to the
+            side so you can move seamlessly from a strength superset to a quick row or cycle.
+          </li>
+          <li>
+            <strong>Open Walkways:</strong> Ensure a continuous 2–3 foot pathway around all
+            equipment. This prevents accidents when carrying weights or changing settings.
+          </li>
+          <li>
+            <strong>Mirror Placement:</strong> Mount mirrors on the wall facing the strength
+            zone and free-weight area. This helps you monitor form during squats, deadlifts,
+            and presses.
+          </li>
+          <li>
+            <strong>Electrical Outlets:</strong> Cardio machines and speakers need power.
+            Plan your layout so cords aren’t stretched across walkways—use flat extension
+            cords or cable concealers to reduce trip hazards.
+          </li>
+        </ul>
+        <p>
+          Always keep a fire extinguisher and first-aid kit within reach, ideally near the
+          entry to your gym space.
+        </p>
+
+        <h2>6. Incorporate Mirrors & Sound System</h2>
+        <p>
+          Mirrors and a decent sound system elevate the ambience:
+        </p>
+        <ul>
+          <li>
+            <strong>Full-Length Mirrors:</strong> Installing a 6–8 foot mirror on one central
+            wall provides instant visual feedback. Ensure it’s secured with heavy-duty anchors.
+          </li>
+          <li>
+            <strong>Sound System:</strong> Mount a Bluetooth speaker on the wall above waist
+            height. This frees up floor space and delivers music evenly—ideal for interval
+            timers and workout playlists.
+          </li>
+        </ul>
+        <p>
+          When you can see your form and enjoy motivating audio, even a small gym feels more
+          professional.
+        </p>
+
+        <h2>7. Plan for Future Growth</h2>
+        <p>
+          Your needs will evolve. Leave room to add new equipment:
+        </p>
+        <ul>
+          <li>
+            <strong>Vertical Storage:</strong> Pegboards and wall hooks for bands, jump ropes,
+            and resistance tubes keep accessories off the floor but within easy reach.
+          </li>
+          <li>
+            <strong>Modular Racks:</strong> Choose a rack with attachable dip bars, landmine
+            attachments, and plate holders. This lets you expand your lifting options without
+            buying a new frame.
+          </li>
+          <li>
+            <strong>Foldable Equipment:</strong> A folding treadmill or adjustable squat rack
+            allows you to reclaim floor space when not in use—especially important in multipurpose rooms.
+          </li>
+        </ul>
+        <p>
+          By leaving a small “expansion zone” (at least 2×4 feet), you can integrate future
+          additions without a complete redesign.
+        </p>
+
+        <h2>Putting It All Together</h2>
+        <p>
+          Designing your perfect home gym layout requires thoughtful measurement,
+          strategic zoning, and attention to lighting and airflow. Start by mapping
+          out your floor dimensions and ceiling height, then choose durable, impact-absorbing
+          flooring. Define functional zones for warm-up, strength, free weights, and cardio,
+          ensuring clear walkways and safe equipment placement. Optimize lighting,
+          install mirrors, and plan storage solutions that keep the space organized.
+
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- About -->
+        <div class="footer-section footer-about">
+          <h3>About ProGear</h3>
+          <p>
+            ProGear delivers industrial-grade fitness equipment trusted by
+            professionals worldwide. From cardio machines to free weights, we
+            combine durability with cutting-edge innovation.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Social -->
+        <div class="footer-section footer-contact">
+          <h3>Contact Us</h3>
+          <p>123 Fitness Ave.<br />Skopje, North Macedonia</p>
+          <p>Email: support@progear.com<br />Phone: +389 2 123 456</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">© 2025 ProGear. All Rights Reserved.</div>
+    </footer>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

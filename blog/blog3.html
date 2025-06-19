@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <ul class="header-ul">
+          <div>
+            <h1 class="amblem">Pro<span>Gear</span></h1>
+          </div>
+          <li><a href="../main.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li class="shop">
+            <a href="../shop.html"
+              >Shop <i class="fa-solid fa-caret-down"></i
+            ></a>
+            <ul class="shop-dropdown">
+              <li>
+                <a class="dropdown-header" href="../cardio.html"
+                  >Cardio Machines</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=01">Treadmill X100</a></li>
+                  <li>
+                    <a href="../product.html?id=07">Elliptical Trainer E200</a>
+                  </li>
+                  <li>
+                    <a href="../product.html?id=08">Rowing Machine R500</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../weights.html"
+                  >Free Weights</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=03">Free Weight</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../strength.html"
+                  >Strength Stations</a
+                >
+                <ul>
+                  <li>
+                    <a href="../product.html?id=02"
+                      >FID7 Pro Adjustable Bench</a
+                    >
+                  </li>
+                  <li><a href="../product.html?id=09">Power Rack PR100</a></li>
+                  <li>
+                    <a href="../product.html?id=10">Cable Crossover CC300</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../functional.html"
+                  >Cable & Functional Trainers</a
+                >
+                <ul>
+                  <li>
+                    <a href="../product.html?id=04">Resistance Band Set</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../intensity.html"
+                  >High-Intensity & Plyo Gear</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=11">Plyo Box Set</a></li>
+                  <li>
+                    <a href="../product.html?id=12">Battle Ropes 50 ft</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../resistance.html"
+                  >Resistance & Mobility</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=06"> Exercise Ball</a></li>
+                  <li><a href="../product.html?id=13">Foam Roller Pro</a></li>
+                  <li><a href="../product.html?id=14">Yoga Block Pair</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../floors.html"
+                  >Floors & Mats</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=05">Yoga Mat</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../accesories.html"
+                  >Accessories & Wearables</a
+                >
+                <ul>
+                  <li>
+                    <a href="../product.html?id=15">Fitness Tracker Watch</a>
+                  </li>
+                  <li><a href="../product.html?id=16">Lifting Gloves</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../bundles.html"
+                  >Bundles & Packages</a
+                >
+                <ul>
+                  <li>
+                    <a href="../product.html?id=17">Home Gym Starter Bundle</a>
+                  </li>
+                  <li><a href="../product.html?id=18">Cardio Duo Pack</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <span class="cart"
+            ><a href="../cart.html"
+              ><i
+                class="fa-solid fa-cart-shopping"
+                style="color: orange; font-size: 30px"
+                ><p
+                  class="num-p"
+                  style="
+                    position: absolute;
+                    top: -12px;
+                    left: 18px;
+                    color: white;
+                    background-color: red;
+                    padding: 3px 5px;
+                    border-radius: 30px;
+                    font-size: 10px;
+                  "
+                >
+                  0
+                </p></i
+              ></a
+            ></span
+          >
+          <button
+            id="mobile-menu-toggle"
+            class="mobile-menu-toggle"
+            aria-label="Toggle navigation"
+          >
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </ul>
+
+        <!--mobile nav-->
+        <nav id="mobile-menu" class="mobile-menu">
+          <ul class="nav-list">
+            <li><a href="../main.html">Home</a></li>
+            <li class="shop-m">
+              <a href="#!" class="shop-m-toggle"
+                >Shop <i style="color: orange" class="fa fa-caret-down"></i
+              ></a>
+              <ul class="shop-dropdown-m">
+                <li class="shop-m">
+                  <a href="../shop.html" class="shop-m-toggle">All</a>
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../cardio.html" class="shop-m-toggle"
+                    >Cardio Machines</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../weights.html" class="shop-m-toggle"
+                    >Free Weights</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../strength.html" class="shop-m-toggle"
+                    >Strength Stations</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../functional.html" class="shop-m-toggle"
+                    >Cable & Functional Trainers</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../intensity.html" class="shop-m-toggle"
+                    >High-Intensity & Plyo Gear</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../resistance.html" class="shop-m-toggle"
+                    >Resistance & Mobility</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../floors.html" class="shop-m-toggle"
+                    >Floors & Mats</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../accesories.html" class="shop-m-toggle"
+                    >Accessories & Wearables</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../bundles.html" class="shop-m-toggle"
+                    >Bundles & Packages</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Blog Section -->
+    <a href="../blog.html" class="custom-back-link">← Back to Blog</a>
+    <section class="custom-blog-wrapper">
+      <article class="custom-post-full">
+        <img
+          src="../images/blog/blog3.jpeg"
+          alt="Home Gym Essentials"
+          class="custom-post-full-img"
+        />
+        <div class="custom-post-full-content">
+          <p class="custom-post-full-date">May 2, 2025</p>
+          <h1 class="custom-post-full-title">Top 10 Home Gym Essentials</h1>
+          <div class="custom-post-full-body">
+            <p>
+              Building a home gym can be intimidating—especially if you’re
+              working with limited space or budget. But with the right core
+              pieces, you can create a versatile setup that lets you train
+              strength, mobility, and cardio without leaving home. Below, we’ve
+              compiled the ten absolute essentials for any home gym. These items
+              cover the foundational needs of most workouts, from free weights
+              to resistance bands, so you can get a well-rounded routine without
+              overspending.
+            </p>
+
+            <h2>1. Adjustable Dumbbells</h2>
+            <p>
+              Dumbbells are among the most versatile strength tools. An
+              adjustable set (ranging from 5 lb up to at least 50 lb per
+              dumbbell) lets you perform presses, rows, lunges, and more—all
+              from a single pair. Look for a selectorized design that changes
+              weight plates with a simple pin mechanism; this saves floor space
+              versus having ten+ fixed‐weight pairs.
+            </p>
+
+            <h2>2. Sturdy Flat/Incline Bench</h2>
+            <p>
+              A durable bench with both flat and incline settings is crucial for
+              pressing movements (bench press, shoulder press), step‐ups, and
+              seated exercises. Choose a bench rated for at least 600 lb to
+              ensure stability. The ability to incline also lets you target
+              upper chest and shoulders more effectively.
+            </p>
+
+            <h2>3. Resistance Bands (Light–Extra Heavy)</h2>
+            <p>
+              Bands take up virtually no room and can add extra resistance to
+              barbell lifts, assist pull-ups, or provide a full body workout
+              when space is extremely limited. A set that includes light,
+              medium, and heavy bands (20–100 lb tension) lets you scale up as
+              you grow stronger.
+            </p>
+
+            <h2>4. Olympic Barbell & Plate Set</h2>
+            <p>
+              For serious strength training, a standard 7 ft Olympic barbell (45
+              lb) plus a set of bumper plates (2×10 lb, 2×25 lb, 2×35 lb, 2×45
+              lb) covers squats, deadlifts, bench presses, and overhead presses.
+              Bumper plates protect your flooring if you ever need to drop a
+              lift. Look for a bar with at least a 1,000 lb tensile rating and
+              smooth knurling.
+            </p>
+
+            <h2>5. Power Rack or Squat Stand</h2>
+            <p>
+              A power rack ensures safety when squatting or bench pressing at
+              home—especially if you train without a spotter. Look for a rack
+              that includes J-hooks, safety pins or straps, and pull-up bar
+              integration. If space or budget is tight, a pair of heavy-duty
+              squat stands can suffice, but ensure they’re rated for 500 lb+ and
+              include safety catch options.
+            </p>
+
+            <h2>6. Pull-Up Bar (Wall- or Ceiling-Mounted)</h2>
+            <p>
+              Pull-ups, chin-ups, and hanging leg raises are key to upper‐body
+              and grip strength. A wall-mounted or ceiling-mounted pull-up bar
+              keeps your floor area clear. Some models can be installed between
+              door frames, but a commercial-grade mount is more stable if you
+              want to do kipping or weighted pull-ups.
+            </p>
+
+            <h2>7. Kettlebell (One Medium & One Heavy)</h2>
+            <p>
+              Kettlebells are excellent for dynamic, full‐body movements like
+              swings, goblet squats, Turkish get-ups, and renegade rows. Start
+              with a 16 kg (35 lb) kettlebell for most adults and add a 24 kg
+              (53 lb) or 32 kg (70 lb) option as you progress. Kettlebells also
+              double as a substitute for a dumbbell in many exercises.
+            </p>
+
+            <h2>8. Yoga/Exercise Mat</h2>
+            <p>
+              A high-density, non-slip mat provides cushioning for floor
+              exercises—planks, push-ups, stretching, and core work. Look for a
+              1⁄4 inch (approx. 6 mm) thickness to protect your joints while
+              still allowing a stable base for lifting.
+            </p>
+
+            <h2>9. Jump Rope or Compact Cardio Option</h2>
+            <p>
+              Even 10 minutes of jump rope can elevate heart rate quickly for a
+              finisher or warm-up. A high-quality speed rope with adjustable
+              cable length can simulate boxing‐style cardio in minimal space. If
+              you have more room, consider a foldable air bike or compact rowing
+              machine to diversify your training.
+            </p>
+
+            <h2>10. Storage & Organization (Dumbbell Rack, Plate Pegs)</h2>
+            <p>
+              Having a place for each piece keeps your home gym safe and tidy. A
+              two-tier dumbbell rack (holds 200 lb+ total) keeps adjustable
+              dumbbells off the floor. Plate pegs that attach to your power rack
+              or squat stand hold bumper plates out of the way. Organizing
+              bands, mats, and accessories on wall hooks or in a small shelving
+              unit prevents clutter and reduces trip hazards.
+            </p>
+
+            <h2>Putting It All Together</h2>
+            <p>
+              With these ten essentials, you can cover virtually any style of
+              workout—strength, mobility, and cardio—without needing a
+              commercial gym membership. Start by prioritizing free weights and
+              a bench/power rack setup if your budget allows, then gradually add
+              bands, kettlebells, and cardio tools as you refine your routine.
+              Proper form, a clear plan, and consistent progression are more
+              important than having every gadget. Invest in quality, maintain
+              your equipment, and you’ll have a home gym that serves you for
+              years to come.
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- About -->
+        <div class="footer-section footer-about">
+          <h3>About ProGear</h3>
+          <p>
+            ProGear delivers industrial-grade fitness equipment trusted by
+            professionals worldwide. From cardio machines to free weights, we
+            combine durability with cutting-edge innovation.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Social -->
+        <div class="footer-section footer-contact">
+          <h3>Contact Us</h3>
+          <p>123 Fitness Ave.<br />Skopje, North Macedonia</p>
+          <p>Email: support@progear.com<br />Phone: +389 2 123 456</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">© 2025 ProGear. All Rights Reserved.</div>
+    </footer>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

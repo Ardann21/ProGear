@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <ul class="header-ul">
+          <div>
+            <h1 class="amblem">Pro<span>Gear</span></h1>
+          </div>
+          <li><a href="../main.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li class="shop">
+            <a href="../shop.html"
+              >Shop <i class="fa-solid fa-caret-down"></i
+            ></a>
+            <ul class="shop-dropdown">
+              <li>
+                <a class="dropdown-header" href="../cardio.html"
+                  >Cardio Machines</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=01">Treadmill X100</a></li>
+                  <li>
+                    <a href="../product.html?id=07">Elliptical Trainer E200</a>
+                  </li>
+                  <li>
+                    <a href="../product.html?id=08">Rowing Machine R500</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../weights.html"
+                  >Free Weights</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=03">Free Weight</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../strength.html"
+                  >Strength Stations</a
+                >
+                <ul>
+                  <li>
+                    <a href="../product.html?id=02"
+                      >FID7 Pro Adjustable Bench</a
+                    >
+                  </li>
+                  <li><a href="../product.html?id=09">Power Rack PR100</a></li>
+                  <li>
+                    <a href="../product.html?id=10">Cable Crossover CC300</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../functional.html"
+                  >Cable & Functional Trainers</a
+                >
+                <ul>
+                  <li>
+                    <a href="../product.html?id=04">Resistance Band Set</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../intensity.html"
+                  >High-Intensity & Plyo Gear</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=11">Plyo Box Set</a></li>
+                  <li>
+                    <a href="../product.html?id=12">Battle Ropes 50 ft</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../resistance.html"
+                  >Resistance & Mobility</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=06"> Exercise Ball</a></li>
+                  <li><a href="../product.html?id=13">Foam Roller Pro</a></li>
+                  <li><a href="../product.html?id=14">Yoga Block Pair</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../floors.html"
+                  >Floors & Mats</a
+                >
+                <ul>
+                  <li><a href="../product.html?id=05">Yoga Mat</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../accesories.html"
+                  >Accessories & Wearables</a
+                >
+                <ul>
+                  <li>
+                    <a href="../product.html?id=15">Fitness Tracker Watch</a>
+                  </li>
+                  <li><a href="../product.html?id=16">Lifting Gloves</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-header" href="../bundles.html"
+                  >Bundles & Packages</a
+                >
+                <ul>
+                  <li>
+                    <a href="../product.html?id=17">Home Gym Starter Bundle</a>
+                  </li>
+                  <li><a href="../product.html?id=18">Cardio Duo Pack</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <span class="cart"
+            ><a href="../cart.html"
+              ><i
+                class="fa-solid fa-cart-shopping"
+                style="color: orange; font-size: 30px"
+                ><p
+                  class="num-p"
+                  style="
+                    position: absolute;
+                    top: -12px;
+                    left: 18px;
+                    color: white;
+                    background-color: red;
+                    padding: 3px 5px;
+                    border-radius: 30px;
+                    font-size: 10px;
+                  "
+                >
+                  0
+                </p></i
+              ></a
+            ></span
+          >
+          <button
+            id="mobile-menu-toggle"
+            class="mobile-menu-toggle"
+            aria-label="Toggle navigation"
+          >
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </ul>
+
+        <!--mobile nav-->
+        <nav id="mobile-menu" class="mobile-menu">
+          <ul class="nav-list">
+            <li><a href="../main.html">Home</a></li>
+            <li class="shop-m">
+              <a href="#!" class="shop-m-toggle"
+                >Shop <i style="color: orange" class="fa fa-caret-down"></i
+              ></a>
+              <ul class="shop-dropdown-m">
+                <li class="shop-m">
+                  <a href="../shop.html" class="shop-m-toggle">All</a>
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../cardio.html" class="shop-m-toggle"
+                    >Cardio Machines</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../weights.html" class="shop-m-toggle"
+                    >Free Weights</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../strength.html" class="shop-m-toggle"
+                    >Strength Stations</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../functional.html" class="shop-m-toggle"
+                    >Cable & Functional Trainers</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../intensity.html" class="shop-m-toggle"
+                    >High-Intensity & Plyo Gear</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../resistance.html" class="shop-m-toggle"
+                    >Resistance & Mobility</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../floors.html" class="shop-m-toggle"
+                    >Floors & Mats</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../accesories.html" class="shop-m-toggle"
+                    >Accessories & Wearables</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+                <li class="shop-m">
+                  <a href="../bundles.html" class="shop-m-toggle"
+                    >Bundles & Packages</a
+                  >
+                  <ul class="shop-dropdown-m"></ul>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Blog Section -->
+    <a href="../blog.html" class="custom-back-link">← Back to Blog</a>
+    <section class="custom-blog-wrapper">
+      <article class="custom-post-full">
+        <img
+          src="../images/blog/blog2.jpeg"
+          alt="Maximize Cardio Workouts"
+          class="custom-post-full-img"
+        />
+        <div class="custom-post-full-content">
+          <p class="custom-post-full-date">May 8, 2025</p>
+          <h1 class="custom-post-full-title">
+            How to Maximize Your Cardio Workouts
+          </h1>
+          <div class="custom-post-full-body">
+            <p>
+              Cardio training is a cornerstone of overall fitness—whether you’re
+              aiming to shed pounds, boost endurance, or support heart health.
+              Yet many people find their sessions feel monotonous, or they
+              struggle to make consistent progress. In this guide, we’ll cover
+              five actionable strategies to get the most out of treadmill, bike,
+              elliptical, and outdoor runs. By focusing on goal setting,
+              intensity variation, proper monitoring, cross‐training, and
+              nutrition, you’ll not only burn more calories but also maintain
+              motivation and avoid plateaus.
+            </p>
+
+            <h2>1. Define Clear Goals and Track Metrics</h2>
+            <p>
+              The first step to maximizing your cardio is establishing specific,
+              measurable goals. Do you want to:
+            </p>
+            <ul>
+              <li>
+                <strong>Improve Fat Burn:</strong> Target a steady‐state 45–60
+                minute session at 60–70% of your max heart rate.
+              </li>
+              <li>
+                <strong>Build Endurance:</strong> Gradually increase workout
+                duration—add 5–10% more time each week.
+              </li>
+              <li>
+                <strong>Boost Speed:</strong> Incorporate timed intervals (e.g.,
+                400m sprints on the track) and track pace improvements.
+              </li>
+              <li>
+                <strong>Enhance Heart Health:</strong> Aim for 150+ minutes of
+                moderate‐intensity or 75+ minutes of vigorous‐intensity cardio
+                per week, as recommended by the American Heart Association.
+              </li>
+            </ul>
+            <p>
+              Use a reliable heart‐rate monitor or fitness watch to record your
+              average and peak heart rates. Log duration, distance, and
+              perceived exertion (RPE on a 1–10 scale) after each session. Over
+              time, compare week‐to‐week data to ensure you’re steadily
+              progressing toward your targets.
+            </p>
+
+            <h2>2. Incorporate High‐Intensity Interval Training (HIIT)</h2>
+            <p>
+              Steady‐state cardio is valuable, but HIIT can dramatically improve
+              calorie burn and cardiovascular efficiency in less time. Here’s a
+              simple treadmill‐based HIIT template:
+            </p>
+            <ol>
+              <li>
+                <strong>Warm Up:</strong> 5 minutes of brisk walking or light
+                jogging (50–60% HR<sub>max</sub>).
+              </li>
+              <li>
+                <strong>Interval Blocks:</strong>
+                <ul>
+                  <li>
+                    1 minute at 85–90% HR<sub>max</sub> (fast sprint or uphill
+                    run).
+                  </li>
+                  <li>
+                    2 minutes active recovery at 60–65% HR<sub>max</sub> (slow
+                    jog or brisk walk).
+                  </li>
+                  <li>Repeat for 6–8 rounds total.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Cool Down:</strong> 5–7 minutes of walking, gradually
+                bringing your heart rate down.
+              </li>
+            </ol>
+            <p>
+              If you prefer cycling, use a similar cadence: 20–30 seconds of
+              “all‐out” effort (90+ RPM), followed by 90 seconds of easy
+              spinning (60–70 RPM). Over weeks, you can increase the number of
+              rounds or slightly extend the high‐intensity intervals. HIIT not
+              only burns more calories during the workout but also elevates your
+              post‐exercise oxygen consumption (EPOC), meaning you continue
+              burning fat for up to 24 hours afterward.
+            </p>
+
+            <h2>3. Monitor Heart Rate Zones and Perceived Effort</h2>
+            <p>
+              Simply “running faster” doesn’t guarantee quality training.
+              Instead, learn to target specific heart‐rate zones:
+            </p>
+            <ul>
+              <li>
+                <strong>Zone 1 (50–60% HR<sub>max</sub>):</strong> Recovery
+                pace—ideal for active rest days or cooldowns.
+              </li>
+              <li>
+                <strong>Zone 2 (60–70% HR<sub>max</sub>):</strong> Fat‐burning
+                aerobic zone—best for longer steady‐state sessions targeting
+                aerobic base.
+              </li>
+              <li>
+                <strong>Zone 3 (70–80% HR<sub>max</sub>):</strong> Tempo
+                zone—improves cardiovascular capacity and endurance.
+              </li>
+              <li>
+                <strong>Zone 4 (80–90% HR<sub>max</sub>):</strong> Threshold
+                zone—pushes your lactate threshold, increasing speed endurance.
+              </li>
+              <li>
+                <strong>Zone 5 (90–100% HR<sub>max</sub>):</strong> Max‐effort
+                sprints—used sparingly for short bursts in HIIT.
+              </li>
+            </ul>
+            <p>
+              If you don’t own a heart‐rate monitor, use the Rate of Perceived
+              Exertion (RPE) scale:
+              <em>RPE 3–4</em> ≈ Zone 1–2 (easy conversation),
+              <em>RPE 5–6</em> ≈ Zone 2–3 (steady, but still talking),
+              <em>RPE 7–8</em> ≈ Zone 4 (conversation is difficult), and
+              <em>RPE 9–10</em> ≈ Zone 5 (all‐out sprint). Checking your pulse
+              manually at the wrist or neck for 15 seconds and multiplying by 4
+              can also give an approximate heart rate.
+            </p>
+
+            <h2>4. Mix in Cross‐Training and Active Recovery</h2>
+            <p>
+              Performing the same cardio modality day in and day out can lead to
+              overuse injuries and burnout. To keep your body balanced:
+            </p>
+            <ul>
+              <li>
+                <strong>Alternate Modalities:</strong> If you run on Monday, try
+                a cycling or rowing session on Wednesday. Different machines and
+                terrains engage slightly different muscle fibers.
+              </li>
+              <li>
+                <strong>Active Recovery Days:</strong> Incorporate low‐impact
+                activities—yoga, swimming, or a brisk walk—to promote blood flow
+                without taxing your joints.
+              </li>
+              <li>
+                <strong>Strength‐Based Cardio:</strong> Integrate bodyweight or
+                kettlebell circuits that keep your heart rate elevated while
+                simultaneously building strength (e.g., kettlebell swings, jump
+                squats, or burpees with controlled form).
+              </li>
+            </ul>
+            <p>A typical weekly schedule might look like:</p>
+            <ul>
+              <li>
+                <strong>Monday:</strong> 30 minutes steady‐state jog (Zone 2)
+              </li>
+              <li>
+                <strong>Tuesday:</strong> Strength–cardio circuit (20 minutes
+                total, alternating bodyweight moves)
+              </li>
+              <li>
+                <strong>Wednesday:</strong> HIIT cycling session (6 × 20 seconds
+                all‐out / 90 seconds easy spin)
+              </li>
+              <li>
+                <strong>Thursday:</strong> Active recovery—45-minute yoga or
+                brisk walk
+              </li>
+              <li>
+                <strong>Friday:</strong> Tempo run (20 minutes at Zone 3,
+                bracketed by 5 minutes warm-up/cool-down)
+              </li>
+              <li>
+                <strong>Saturday:</strong> Optional low-impact swim or bike ride
+                (40 minutes at Zone 2)
+              </li>
+              <li>
+                <strong>Sunday:</strong> Rest day—foam roll, stretch, hydrate
+              </li>
+            </ul>
+
+            <h2>5. Fuel, Hydrate, and Recover Smartly</h2>
+            <p>
+              Nutrition and recovery are often overlooked yet are critical for
+              maximizing cardio performance:
+            </p>
+            <ul>
+              <li>
+                <strong>Pre-Workout Fuel:</strong> Consume a small snack 30–45
+                minutes before your session—ideally 20–30 g of complex carbs
+                (banana, oatmeal) plus a bit of protein if it’s a morning
+                workout. This ensures you have stable blood sugar and can push
+                harder.
+              </li>
+              <li>
+                <strong>Hydration:</strong> Even mild dehydration (2% body
+                weight loss in fluids) can reduce performance. Aim to drink 500
+                mL of water 2 hours before exercising, and sip 150–200 mL every
+                15 minutes during longer sessions. For workouts over 60 minutes,
+                consider an electrolyte beverage to replace sodium, potassium,
+                and magnesium.
+              </li>
+              <li>
+                <strong>Post-Workout Nutrition:</strong> Within 45 minutes after
+                high-intensity or long-duration cardio, consume a 3:1
+                carb-to-protein ratio snack or meal (e.g., Greek yogurt with
+                fruit, a turkey sandwich on whole grain). This aids glycogen
+                replenishment and muscle repair.
+              </li>
+              <li>
+                <strong>Sleep and Rest:</strong> Aim for 7–9 hours of sleep per
+                night. Quality sleep supports hormone regulation—especially
+                cortisol and growth hormone—which directly influence recovery
+                and performance.
+              </li>
+            </ul>
+            <p>
+              Additionally, foam rolling or gentle stretching 10–15 minutes
+              post-session can help flush metabolic waste from your muscles and
+              prevent stiffness. Consider a weekly massage or a dedicated
+              mobility routine to keep joints supple if you’re training heavily.
+            </p>
+
+            <h2>Putting It All Together</h2>
+            <p>
+              By defining clear goals, incorporating HIIT, monitoring your heart
+              rate zones, mixing in cross-training, and fueling properly, you’ll
+              create a well-rounded cardio plan that prevents plateaus and keeps
+              you motivated. Remember:
+            </p>
+            <ul>
+              <li>
+                <strong>Stay Consistent:</strong> Even on days you feel “off,”
+                aim for a light session—consistency compounds results over time.
+              </li>
+              <li>
+                <strong>Listen to Your Body:</strong> Muscle soreness is normal;
+                sharp pain is not. Scale back intensity if you experience
+                persistent discomfort.
+              </li>
+              <li>
+                <strong>Periodize Your Training:</strong> Plan a few weeks of
+                higher volume or intensity, followed by a deload week (lighter
+                sessions) to allow full recovery.
+              </li>
+            </ul>
+            <p>
+              Now lace up your running shoes or hop on that bike, plan your next
+              workout with these principles in mind, and watch your cardio
+              performance soar—one session at a time!
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- About -->
+        <div class="footer-section footer-about">
+          <h3>About ProGear</h3>
+          <p>
+            ProGear delivers industrial-grade fitness equipment trusted by
+            professionals worldwide. From cardio machines to free weights, we
+            combine durability with cutting-edge innovation.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Social -->
+        <div class="footer-section footer-contact">
+          <h3>Contact Us</h3>
+          <p>123 Fitness Ave.<br />Skopje, North Macedonia</p>
+          <p>Email: support@progear.com<br />Phone: +389 2 123 456</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">© 2025 ProGear. All Rights Reserved.</div>
+    </footer>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>
